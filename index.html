@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="tl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Buenas Affiliate Program: kumita bilang Buenas Host. Licensed by PAGCOR. For 21 years old and above.">
+<meta property="og:title" content="Buenas Affiliate Program">
+<meta property="og:description" content="Kumita bilang Buenas Host. ₱0 puhunan, licensed by PAGCOR. For 21+ only.">
+<link rel="icon" type="image/webp" href="assets/mark.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Buenas Affiliate Program</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap">
+<style>
+/* Layout: one dark scroll story; full-bleed bands, a 1120px inner column, one pinned horizontal timeline. */
+:root{
+  --ink:#231B23;          /* Buenas Black, page ground */
+  --ink-2:#2D232D;        /* raised surface */
+  --ink-3:#3A2E39;        /* lines, tracks */
+  --paper:#F9F9F9;        /* Buenas White */
+  --mute:#BFB3BD;         /* secondary text on ink */
+  --gold:#FFD700;
+  --orange:#F7941D;
+  --red:#FF0000;
+  --rust:#B6271C;
+  --peach:#FDD3A0;
+  --good:#5FD38D;
+  --grad:linear-gradient(90deg,#FFD700 0%,#F7941D 45%,#FF2A00 100%);
+  --f-display:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-body:"Hanken Grotesk",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --s-xs:.8125rem; --s-sm:.9375rem; --s-md:1.0625rem; --s-lg:1.375rem;
+  --s-xl:clamp(1.75rem,4.6vw,2.75rem); --s-2xl:clamp(2.25rem,7vw,4.5rem); --s-3xl:clamp(3rem,11vw,7.5rem);
+  --wrap:1120px;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:var(--f-body);font-size:var(--s-md);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+img,video{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.band{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:clamp(72px,12vw,140px);position:relative}
+.wrap{max-width:var(--wrap);margin-inline:auto;position:relative}
+.eyebrow{font-family:var(--f-display);font-weight:600;font-size:var(--s-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.lede{font-size:var(--s-lg);color:var(--mute);max-width:36ch;line-height:1.45}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stack{display:flex;flex-direction:column;gap:20px}
+.num{font-variant-numeric:tabular-nums}
+.note{font-size:var(--s-xs);color:var(--mute)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--ink) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.top img{height:20px;width:auto}
+.top .pill{font-size:var(--s-xs);color:var(--mute);border:1px solid var(--ink-3);border-radius:99px;padding:4px 12px;white-space:nowrap}
+.progress{position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--grad);transform-origin:0 50%;transform:scaleX(0)}
+
+/* age gate */
+.gate{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:color-mix(in srgb,var(--ink) 92%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:max(24px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(24px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.gate-card{max-width:420px;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+.gate-card img{width:72px}
+.gate-card h2{font-size:clamp(1.6rem,6vw,2.1rem)}
+.gate-card p{color:var(--mute)}
+.gate-btns{display:flex;gap:12px;width:100%;margin-top:6px}
+.btn{flex:1;border:0;border-radius:14px;padding:15px 18px;font-family:var(--f-display);font-weight:600;font-size:1rem;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-main{background:var(--grad);color:var(--ink)}
+.btn-ghost{background:var(--ink-2);color:var(--paper);border:1px solid var(--ink-3)}
+.gate-no{color:var(--peach)}
+
+/* hero */
+.hero{min-height:min(92svh,860px);display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url(assets/pattern.webp) center/900px auto repeat;opacity:.035;pointer-events:none}
+.hero::after{content:"";position:absolute;width:900px;height:900px;right:-300px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(247,148,29,.32),rgba(255,0,0,.08) 45%,transparent 70%);pointer-events:none}
+.hero h1{font-size:var(--s-3xl);font-weight:800;line-height:.98;letter-spacing:-.035em}
+.hero h1 span{display:block}
+.hero .lede{margin-top:28px}
+.scroll-cue{margin-top:44px;display:inline-flex;align-items:center;gap:12px;color:var(--mute);font-size:var(--s-sm)}
+.scroll-cue i{width:22px;height:36px;border:2px solid var(--ink-3);border-radius:12px;position:relative}
+.scroll-cue i::after{content:"";position:absolute;left:50%;top:6px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--orange);animation:cue 1.6s infinite}
+@keyframes cue{0%{transform:translateY(0);opacity:1}80%{transform:translateY(12px);opacity:0}100%{opacity:0}}
+
+/* opportunities */
+.opps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-top:48px}
+.opp{background:var(--ink-2);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.opp img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.opp div{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px}
+.opp h3{font-size:1.2rem}
+.opp .but{color:var(--peach);font-size:var(--s-sm);position:relative;align-self:flex-start}
+.q-card{margin-top:16px;border-radius:24px;overflow:hidden;position:relative;display:grid;grid-template-columns:1fr;background:var(--ink-2)}
+.q-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.q-card .q-body{padding:28px 24px 32px;display:flex;flex-direction:column;gap:16px}
+.q-card h3{font-size:var(--s-xl)}
+.q-mark{font-family:var(--f-display);font-weight:800;font-size:4rem;line-height:1}
+.chips-row{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--ink-3);border-radius:99px;padding:6px 14px;font-size:var(--s-sm);background:var(--ink)}
+@media(min-width:820px){.q-card{grid-template-columns:1.1fr 1fr}.q-card img{height:100%;aspect-ratio:auto}.q-card .q-body{padding:48px;justify-content:center}}
+
+/* timeline */
+.tl{padding-block:0;overflow:hidden}
+.tl-head{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.tl-pin{height:100svh;display:flex;flex-direction:column;justify-content:center;gap:clamp(16px,3vh,32px);overflow:hidden;position:relative;padding-top:56px}
+.tl-foot{display:flex;flex-direction:column;align-items:center;gap:14px;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.tl-hint{display:flex;align-items:center;gap:12px;background:rgba(35,27,35,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:99px;padding:10px 18px 10px 12px;box-shadow:0 0 0 1px rgba(247,148,29,.5),0 10px 30px -10px rgba(0,0,0,.6);font-size:var(--s-sm);font-weight:600;white-space:nowrap;transition:opacity .4s}
+.tl-hint .hand{width:30px;height:36px;position:relative;flex:0 0 30px}
+.tl-hint .hand svg{position:absolute;left:3px;bottom:0;width:24px;height:24px;animation:swipeUp 1.6s ease-in-out infinite}
+.tl-hint .hand i{position:absolute;left:14px;top:2px;width:2px;height:22px;border-radius:1px;background:linear-gradient(to top,transparent,var(--orange));animation:trail 1.6s ease-in-out infinite}
+@keyframes swipeUp{0%{transform:translateY(6px);opacity:0}20%{opacity:1}70%{transform:translateY(-12px);opacity:1}100%{transform:translateY(-12px);opacity:0}}
+@keyframes trail{0%,20%{opacity:0;transform:scaleY(.2);transform-origin:bottom}70%{opacity:1;transform:scaleY(1)}100%{opacity:0}}
+.tl-hint.side .hand svg{animation-name:swipeLeft}
+.tl-hint.side .hand i{display:none}
+@keyframes swipeLeft{0%{transform:translateX(8px);opacity:0}20%{opacity:1}70%{transform:translateX(-10px);opacity:1}100%{opacity:0}}
+.tl-hint.gone{opacity:0;pointer-events:none}
+.tl-prog{width:min(100%,520px);height:3px;border-radius:2px;background:var(--ink-3);position:relative}
+.tl-prog b{position:absolute;inset:0;background:var(--grad);border-radius:2px;transform-origin:0 50%;transform:scaleX(0)}
+.no-pin .tl-prog{width:min(100%,520px);height:3px;border-radius:2px;background:var(--ink-3);position:relative}
+.tl-track{display:flex;gap:20px;padding-inline:max(16px,calc((100vw - var(--wrap))/2));will-change:transform}
+.tl-stop{flex:0 0 min(78vw,400px);display:flex;flex-direction:column;gap:14px}
+.tl-stop figure{margin:0;border-radius:20px;overflow:hidden;aspect-ratio:3/2;background:var(--ink-2);display:grid;place-items:center}
+.tl-stop figure img{width:100%;height:100%;object-fit:cover}
+.tl-stop figure.logo-fig img{width:46%;height:auto;object-fit:contain}
+.tl-year{font-family:var(--f-display);font-weight:800;font-size:clamp(2rem,6vw,3.25rem);line-height:1}
+.tl-stop p{color:var(--mute);max-width:44ch}
+.tl-stop.ph .tl-year{color:var(--orange)}
+.tl-line{height:2px;background:var(--ink-3);position:relative;margin-top:2px}
+.tl-line::after{content:"";position:absolute;left:0;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--orange)}
+.tl-end{flex:0 0 min(82vw,460px);display:flex;align-items:center}
+.tl-end h3{font-size:var(--s-xl)}
+.no-pin .tl-pin{height:auto;padding-block:72px 64px}
+.no-pin .tl-track{overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.no-pin .tl-stop{scroll-snap-align:start}
+
+/* market chart */
+.market-num{font-family:var(--f-display);font-weight:800;font-size:var(--s-3xl);line-height:1;letter-spacing:-.03em;margin-top:18px}
+.chart{margin-top:40px;display:grid;grid-template-columns:repeat(7,1fr);gap:clamp(6px,1.6vw,18px);align-items:end;height:260px;border-bottom:1px solid var(--ink-3)}
+.bar{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px;min-width:0}
+.bar b{font-family:var(--f-display);font-size:clamp(.62rem,1.9vw,.9rem);font-weight:600;color:var(--paper);white-space:nowrap}
+.bar i{display:block;width:100%;border-radius:8px 8px 0 0;background:var(--ink-3);transform-origin:50% 100%;position:relative;overflow:hidden}
+.bar i u{position:absolute;left:0;right:0;bottom:0;background:var(--grad);text-decoration:none}
+.years.share span{font-family:var(--f-display);font-weight:700;color:var(--orange);font-size:var(--s-sm)}
+.years{display:grid;grid-template-columns:repeat(7,1fr);gap:clamp(6px,1.6vw,18px);margin-top:8px;text-align:center;font-size:var(--s-xs);color:var(--mute)}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px;font-size:var(--s-sm);color:var(--mute)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend s{width:12px;height:12px;border-radius:3px;display:inline-block;text-decoration:none}
+
+/* licensed vs not */
+.vs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:44px}
+.vs-col{border-radius:22px;padding:28px 24px;display:flex;flex-direction:column;gap:14px}
+.vs-col.yes{background:var(--ink-2);box-shadow:inset 0 0 0 1px rgba(247,148,29,.45)}
+.vs-col.no{background:transparent;box-shadow:inset 0 0 0 1px var(--ink-3)}
+.vs-col h3{font-size:1.35rem;display:flex;align-items:center;gap:12px}
+.vs-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.vs-col li{display:flex;gap:12px;align-items:flex-start}
+.vs-col li svg{flex:0 0 22px;margin-top:2px}
+.vs-col.no li{color:var(--mute)}
+.pagcor-badge,.lic-b{flex:0 0 auto;width:48px;height:48px;background:#fff;border-radius:50%;display:grid;place-items:center}
+.pagcor-badge img{width:30px;height:auto}
+.lic-b{width:32px;height:32px}.lic-b img{width:20px;height:auto}
+.news{margin-top:28px;display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+.news img.paper{border-radius:16px;width:100%}
+.cicc{display:flex;gap:16px;align-items:center}
+.cicc img{width:64px;height:64px;border-radius:50%;flex:0 0 64px}
+.cicc p{font-size:var(--s-lg);line-height:1.4;font-weight:500}
+@media(min-width:820px){.news{grid-template-columns:1.2fr 1fr;gap:40px}}
+
+/* formula */
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(8px,2vw,18px);margin-top:44px;font-family:var(--f-display);font-weight:700}
+.term{background:var(--ink-2);border-radius:16px;padding:16px 22px;font-size:clamp(1.15rem,3.8vw,2rem);box-shadow:inset 0 0 0 1px var(--ink-3)}
+.term.ggr{background:var(--grad);color:var(--ink);box-shadow:none}
+.op{font-size:clamp(1.5rem,4vw,2.4rem);color:var(--mute)}
+.example-box{margin-top:32px;background:var(--ink-2);border-radius:20px;padding:24px;display:grid;gap:10px;max-width:560px}
+.row{display:flex;justify-content:space-between;gap:16px}
+.row b{white-space:nowrap}
+.row.total{border-top:1px solid var(--ink-3);padding-top:12px;font-family:var(--f-display);font-weight:700;font-size:1.2rem}
+.bridge{margin-top:72px;text-align:center}
+.bridge h2{font-size:var(--s-2xl)}
+
+/* meet buenas */
+.meet{text-align:center;overflow:hidden}
+.meet::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 30%,rgba(247,148,29,.22),transparent 70%);pointer-events:none}
+.meet .logo{width:min(560px,86%);margin:0 auto}
+.meet .tag{margin:28px auto 0;font-size:var(--s-lg);max-width:30ch;color:var(--paper)}
+.lic{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:var(--mute);font-size:var(--s-sm)}
+
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:48px auto 0;max-width:520px}
+.fact{padding:18px 8px;border-top:1px solid var(--ink-3)}
+.fact b{display:block;font-family:var(--f-display);font-size:clamp(1.4rem,5vw,2.4rem);font-weight:800}
+.fact span{font-size:var(--s-xs);color:var(--mute)}
+.vm{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:56px;text-align:left}
+.vm div{background:var(--ink-2);border-radius:20px;padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+.vm p{font-size:1.15rem;line-height:1.5}
+
+/* video */
+.vid{padding-block:0}
+.vid-frame{position:relative;border-radius:24px;overflow:hidden;background:#000;aspect-ratio:16/9;max-width:100%}
+.vid-frame video{width:100%;height:100%;object-fit:cover}
+.vid-cap{text-align:center;margin-top:36px}
+.vid-cap h2{font-size:var(--s-xl);max-width:22ch;margin:0 auto}
+.vid-btn{position:absolute;right:12px;bottom:12px;background:rgba(35,27,35,.7);border:0;border-radius:99px;padding:8px 14px;font-size:var(--s-xs);cursor:pointer;backdrop-filter:blur(8px)}
+
+/* rewards */
+.group-label{margin-top:56px;display:flex;align-items:center;gap:12px;font-family:var(--f-display);font-weight:600;color:var(--peach)}
+.group-label::after{content:"";flex:1;height:1px;background:var(--ink-3)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;margin-top:18px}
+.tile{background:var(--ink-2);border-radius:20px;padding:22px 20px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden;text-align:left;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.tile:hover{transform:translateY(-3px);box-shadow:0 0 0 1px rgba(247,148,29,.5)}
+.tile .ic{height:84px;display:flex;align-items:center}
+.tile .ic img{height:84px;width:auto}
+.tile h3{font-size:1.15rem}
+.tile p{color:var(--mute);font-size:var(--s-sm)}
+.tile .more{margin-top:auto;font-size:var(--s-xs);color:var(--orange);font-weight:600;padding-top:6px}
+.tile .soon{position:absolute;top:16px;right:16px;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:var(--ink);border:1px solid var(--ink-3);padding:3px 10px;border-radius:99px;color:var(--peach)}
+.tile.static{cursor:default}
+.tile.static:hover{transform:none;box-shadow:none}
+.loop{margin-top:72px;display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
+.loop-ring{position:relative;width:min(360px,86vw);aspect-ratio:1;margin:0 auto}
+.loop-ring svg{position:absolute;inset:0;width:100%;height:100%}
+.loop-step{position:absolute;transform:translate(-50%,-50%);background:var(--ink-2);border-radius:14px;padding:8px 12px;font-family:var(--f-display);font-weight:600;font-size:.88rem;white-space:nowrap;box-shadow:inset 0 0 0 1px var(--ink-3)}
+.loop-step.on{background:var(--grad);color:var(--ink);box-shadow:none}
+.loop-center{position:absolute;inset:26%;display:grid;place-items:center}
+.loop-center img{width:100%}
+@media(min-width:820px){.loop{grid-template-columns:1fr 1fr}}
+
+/* sheet */
+.sheet-bg{position:fixed;inset:0;z-index:90;background:rgba(10,6,10,.6);display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--ink-2);width:100%;max-width:560px;border-radius:24px 24px 0 0;padding:28px max(22px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) max(22px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:14px;max-height:86svh;overflow:auto}
+.sheet h3{font-size:1.5rem}
+.sheet ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;color:var(--paper)}
+.sheet .close{align-self:stretch;margin-top:8px}
+@media(min-width:620px){.sheet-bg{align-items:center}.sheet{border-radius:24px}}
+
+/* host privileges */
+.hosts-hero{position:relative;padding:0;min-height:min(86svh,780px);display:flex;align-items:flex-end;overflow:hidden}
+.hosts-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 30%}
+.hosts-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,27,35,0) 30%,rgba(35,27,35,.85) 72%,var(--ink) 100%)}
+.hosts-hero .wrap{z-index:1;width:100%;padding:0 max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+.hosts-hero h2{font-size:var(--s-2xl);max-width:16ch}
+.priv{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+.priv ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+.priv li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--ink-3)}
+.priv li b{font-family:var(--f-display);font-size:1.12rem;display:block}
+.priv li span{color:var(--mute);font-size:var(--s-sm)}
+.priv li svg{width:30px;height:30px}
+.phone{width:min(300px,72vw);margin:0 auto;border-radius:44px;padding:10px;background:linear-gradient(145deg,#5b4b58,#1b141b 40%,#3b2f39);box-shadow:0 40px 80px -30px rgba(247,148,29,.45),0 0 0 1px rgba(255,255,255,.08) inset}
+.phone img{border-radius:35px;width:100%}
+@media(min-width:820px){.priv{grid-template-columns:1.1fr .9fr}}
+.free{text-align:center;margin-top:96px}
+.free h3{font-size:var(--s-xl);color:var(--mute);font-weight:600}
+.free .zero{font-family:var(--f-display);font-weight:800;font-size:var(--s-3xl);line-height:1.05;margin-top:10px}
+
+/* commission */
+.pc{display:grid;grid-template-columns:1fr;gap:40px;margin-top:44px}
+.pc-diagram{background:var(--ink-2);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.pl{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center}
+.pl-info{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pl-name{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.pl-name b{font-family:var(--f-display);font-size:.95rem}
+.pl-name span,.pl-cap{font-size:var(--s-xs);color:var(--mute)}
+.pl-cap{color:#ff8a7e}
+.pc-legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:var(--s-xs);color:var(--mute)}
+.pc-legend span{display:inline-flex;align-items:center;gap:8px}
+.pc-legend s{width:14px;height:8px;border-radius:4px;display:inline-block}
+.pc-legend s.pos{background:var(--good)} .pc-legend s.neg{background:var(--red)}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center}
+.av svg{width:24px;height:24px}
+.av.p{background:var(--peach)}
+.av.h{width:64px;height:64px}
+.av.h svg{width:32px;height:32px}
+.pl .track{height:12px;border-radius:6px;background:var(--ink-3);position:relative;overflow:hidden}
+.pl .fill{position:absolute;top:0;bottom:0;left:50%;border-radius:6px}
+.pl .fill.pos{background:var(--good)}
+.pl .fill.neg{background:var(--red);right:50%;left:auto}
+.pl .track::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--mute)}
+.pl .amt{font-family:var(--f-display);font-weight:600;min-width:84px;text-align:right}
+.amt.pos{color:var(--good)} .amt.neg{color:#ff6a5c}
+.pc-total{border-top:1px solid var(--ink-3);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.pc-total .big{font-family:var(--f-display);font-weight:800;font-size:var(--s-2xl);line-height:1}
+.pc-host{display:flex;gap:14px;align-items:center}
+.callouts{display:flex;flex-direction:column;gap:16px}
+.callout{border-left:2px solid var(--orange);padding:4px 0 4px 16px}
+.callout b{font-family:var(--f-display);display:block;font-size:1.1rem}
+.callout span{color:var(--mute);font-size:var(--s-sm)}
+.games{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+@media(min-width:820px){.pc{grid-template-columns:1fr 1fr;align-items:start}}
+
+/* calculator */
+.calc{margin-top:40px;background:var(--ink-2);border-radius:24px;padding:clamp(20px,4vw,40px);display:grid;grid-template-columns:1fr;gap:32px}
+.field{display:flex;flex-direction:column;gap:10px}
+.field label{display:flex;justify-content:space-between;gap:12px;font-weight:600}
+.field output{font-family:var(--f-display);color:var(--gold)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:4px;background:var(--ink-3);outline-offset:6px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:var(--paper);border:5px solid var(--orange);cursor:pointer}
+input[type=range].demo::-webkit-slider-thumb{box-shadow:0 0 0 8px rgba(247,148,29,.35)}
+input[type=range].demo::-moz-range-thumb{box-shadow:0 0 0 8px rgba(247,148,29,.35)}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--paper);border:5px solid var(--orange);cursor:pointer}
+.presets{display:flex;flex-wrap:wrap;gap:8px}
+.preset{background:var(--ink);border:1px solid var(--ink-3);border-radius:99px;padding:8px 14px;font-size:var(--s-sm);cursor:pointer}
+.preset[aria-pressed=true]{border-color:var(--orange);color:var(--gold)}
+.result{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px}
+.result div{background:var(--ink);border-radius:18px;padding:18px}
+.result span{font-size:var(--s-xs);color:var(--mute);display:block}
+.result b{font-family:var(--f-display);font-weight:800;font-size:clamp(1.5rem,5.5vw,2.2rem);display:block;line-height:1.15;white-space:nowrap}
+.result .m b{color:var(--gold)}
+.warn{display:flex;gap:12px;align-items:flex-start;background:rgba(253,211,160,.08);border-radius:16px;padding:16px;color:var(--peach);font-size:var(--s-sm)}
+.warn svg{flex:0 0 20px;margin-top:2px}
+@media(min-width:820px){.calc{grid-template-columns:1fr 1fr}.calc .warn{grid-column:1/-1}}
+
+/* override */
+.stairs{margin-top:44px;display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(6px,1.4vw,14px);align-items:end}
+.step{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0}
+.step img{width:clamp(40px,9vw,88px);height:auto}
+.step .blk{width:100%;border-radius:14px 14px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:12px;gap:2px;transform-origin:50% 100%}
+.step .blk b{font-family:var(--f-display);font-size:clamp(1.05rem,3.4vw,2rem);font-weight:800}
+.step .blk span{font-size:clamp(.62rem,1.8vw,.8rem);color:var(--paper);opacity:.8;text-align:center;line-height:1.25;padding-inline:2px}
+.step .nm{font-family:var(--f-display);font-weight:600;font-size:clamp(.66rem,2vw,.95rem)}
+.step .inc{display:flex;flex-direction:column;align-items:center;line-height:1.15;text-align:center}
+.step .inc b{font-family:var(--f-display);font-weight:700;color:var(--gold);font-size:clamp(.7rem,2.3vw,1.15rem);white-space:nowrap}
+.step .inc small{font-size:clamp(.58rem,1.6vw,.75rem);color:var(--mute)}
+.tier-arrow{margin-top:14px;display:flex;align-items:center;gap:10px;font-size:var(--s-xs);color:var(--mute)}
+.tier-arrow i{flex:1;height:2px;background:var(--grad);position:relative;border-radius:1px}
+.tier-arrow i::after{content:"";position:absolute;right:-2px;top:-4px;border-left:8px solid #FF2A00;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.stack-grid{margin-top:40px;display:grid;grid-template-columns:1fr;gap:12px;align-items:stretch}
+.st-card{background:var(--ink-2);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.st-eq{color:var(--mute);font-size:var(--s-sm)}
+.st-row{display:flex;justify-content:space-between;gap:12px;align-items:baseline;border-top:1px solid var(--ink-3);padding-top:10px}
+.st-row b{font-family:var(--f-display);font-size:1.35rem;white-space:nowrap}
+.st-link{color:var(--orange);font-size:var(--s-xs);font-weight:600;text-decoration:none}
+.st-plus{display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:2rem;color:var(--orange)}
+.st-total{margin-top:12px;border-radius:24px;padding:clamp(22px,4vw,36px);background:var(--ink-2);box-shadow:inset 0 0 0 1px rgba(247,148,29,.55);display:grid;grid-template-columns:1fr;gap:16px;text-align:center}
+.st-total span{font-size:var(--s-xs);color:var(--mute);display:block}
+.st-total b{font-family:var(--f-display);font-weight:800;font-size:clamp(1.6rem,6vw,3.25rem);line-height:1.1;display:block;word-break:break-word}
+@media(min-width:820px){.stack-grid{grid-template-columns:1fr 48px 1fr}}
+.keep{margin-top:20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+
+/* facts divider + fact labels */
+.facts-div{border-top:1px solid var(--ink-3);background:linear-gradient(180deg,var(--ink-2),var(--ink))}
+.fd-tag{display:inline-block;font-family:var(--f-display);font-weight:700;font-size:var(--s-xs);letter-spacing:.14em;text-transform:uppercase;background:var(--grad);color:var(--ink);padding:6px 14px;border-radius:99px}
+.facts-div h2{font-size:var(--s-2xl);margin-top:18px;max-width:18ch}
+.fd-list{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+.fd-list li{display:flex;gap:14px;align-items:flex-start;background:var(--ink);border-radius:18px;padding:18px;box-shadow:inset 0 0 0 1px var(--ink-3)}
+.fd-list li>span{flex:0 0 36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;background:var(--ink-2);color:var(--orange);box-shadow:inset 0 0 0 1px rgba(247,148,29,.5)}
+.fd-list b{font-family:var(--f-display);display:block}
+.fd-list small{color:var(--mute);font-size:var(--s-xs)}
+.fact-k{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:600;font-size:var(--s-sm);color:var(--peach)}
+.fact-k span{background:var(--grad);color:var(--ink);font-weight:700;font-size:var(--s-xs);letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:99px}
+/* timeline story */
+.story{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:0;max-width:760px}
+.story li{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:22px 0;border-left:2px solid var(--ink-3);padding-left:22px;position:relative}
+.story li::before{content:"";position:absolute;left:-7px;top:30px;width:12px;height:12px;border-radius:50%;background:var(--ink-3)}
+.story li.last::before{background:var(--orange)}
+.story .yr{font-family:var(--f-display);font-weight:700;color:var(--orange);padding-top:3px}
+.story p{font-size:var(--s-lg);line-height:1.45}
+.story li.last p{font-family:var(--f-display);font-weight:700;font-size:var(--s-xl);line-height:1.15}
+@media(max-width:520px){.story li{grid-template-columns:1fr;gap:4px}}
+/* buenas club card */
+.tile.club{grid-column:1/-1;display:grid;grid-template-columns:1fr;gap:24px}
+.club-l{display:flex;flex-direction:column;gap:10px}
+.ranks{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:6px}
+.ranks span{background:var(--ink);border-radius:12px;padding:10px 4px;text-align:center;font-size:.7rem;color:var(--mute);display:flex;flex-direction:column;gap:2px}
+.ranks b{font-family:var(--f-display);font-size:clamp(.9rem,3vw,1.2rem);color:var(--gold)}
+.club-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+.club-list li{padding:14px 0;border-bottom:1px solid var(--ink-3);display:flex;flex-direction:column;gap:4px}
+.club-list li:last-child{border-bottom:0}
+.club-list b{font-family:var(--f-display)}
+.club-list span{color:var(--mute);font-size:var(--s-sm)}
+@media(min-width:820px){.tile.club{grid-template-columns:1fr 1fr;gap:40px}}
+/* override controls */
+.ov-ctl{margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;background:var(--ink-2);border-radius:22px;padding:24px}
+.ov-res{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px}
+.wk{margin-top:20px;display:flex;gap:12px;align-items:flex-start;background:var(--ink-2);border-radius:16px;padding:14px 16px;max-width:620px}
+.wk-pill{flex:0 0 auto;background:var(--grad);color:var(--ink);font-family:var(--f-display);font-weight:700;font-size:var(--s-xs);letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:99px;margin-top:2px}
+.scale{display:flex;justify-content:space-between;font-size:.72rem;color:var(--mute)}
+.calc-steps{background:var(--ink);border-radius:18px;padding:6px 18px}
+.cs-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--ink-3);font-size:var(--s-sm);color:var(--mute)}
+.cs-row:last-child{border-bottom:0}
+.cs-row b{color:var(--paper);white-space:nowrap}
+.cs-row.tot{color:var(--paper);font-weight:600}
+.cs-row.tot b{font-family:var(--f-display);font-size:1.25rem;color:var(--gold)}
+.ov-res div{background:var(--ink-2);border-radius:18px;padding:18px 20px}
+.ov-res span{font-size:var(--s-xs);color:var(--mute);display:block}
+.ov-res b{font-family:var(--f-display);font-weight:800;font-size:clamp(1.4rem,5vw,2.2rem);display:block;line-height:1.2}
+.ov-res small{font-size:.9rem;color:var(--mute);-webkit-text-fill-color:var(--mute);font-weight:500}
+.step.on .blk{box-shadow:inset 0 0 0 2px var(--gold)}
+.step.on .nm{color:var(--gold)}
+/* mindset */
+.mindset{margin-top:56px;display:flex;flex-direction:column;gap:14px;max-width:760px}
+.ms{display:flex;flex-direction:column;gap:6px;padding:20px 0 20px 20px;border-left:3px solid var(--orange)}
+.ms b{font-family:var(--f-display);font-size:var(--s-xl);line-height:1.15}
+.ms span{color:var(--mute);font-size:var(--s-md)}
+.bridge-flow{display:flex;flex-direction:column;align-items:center;gap:8px;margin:20px 0 12px;background:var(--ink-2);border-radius:24px;padding:24px}
+.bf-node{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;max-width:220px}
+.bf-node img{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.bf-mark{width:64px;height:64px;border-radius:50%;background:var(--ink);display:grid;place-items:center;box-shadow:inset 0 0 0 1px var(--ink-3)}
+.bf-node .bf-mark img{width:34px;height:auto;border-radius:0}
+.bf-node b{font-family:var(--f-display);font-size:1.1rem}
+.bf-node small{color:var(--mute);font-size:var(--s-xs)}
+.bf-arrow{width:2px;height:28px;background:var(--grad);position:relative}
+.bf-arrow::after{content:"";position:absolute;left:-4px;bottom:-4px;border-top:8px solid #FF2A00;border-left:5px solid transparent;border-right:5px solid transparent}
+@media(min-width:720px){.bridge-flow{flex-direction:row;justify-content:space-between;align-items:flex-start;padding:32px}.bf-arrow{width:auto;flex:1;height:2px;margin-top:32px}.bf-arrow::after{left:auto;right:-4px;bottom:-4px;border-left:8px solid #FF2A00;border-top:5px solid transparent;border-bottom:5px solid transparent;border-right:0}}
+/* invite animation */
+.iv{margin-top:32px;background:var(--ink-2);border-radius:24px;padding:20px;display:grid;grid-template-columns:1fr;gap:18px}
+.iv-stage{position:relative;aspect-ratio:16/11;max-width:100%}
+.iv-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.iv-lines line{stroke:var(--ink-3);stroke-width:2;vector-effect:non-scaling-stroke;stroke-dasharray:4 5;transition:stroke .5s var(--d)}
+.iv[data-step="3"] .iv-lines line{stroke:var(--orange);stroke-dasharray:none}
+.iv-host,.iv-p{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.iv-host{left:50%;top:22%}
+.iv-host img{width:clamp(56px,14vw,88px);height:auto;border-radius:50%;box-shadow:0 0 0 4px var(--ink-2),0 0 0 6px rgba(247,148,29,.6)}
+.iv-host b{font-family:var(--f-display);font-size:var(--s-sm)}
+.iv-p{top:72%}
+.iv-p img{width:clamp(40px,10vw,64px);height:auto;border-radius:50%;filter:grayscale(1) brightness(.7);transition:filter .5s,transform .5s}
+.iv-p small{font-size:clamp(.62rem,2vw,.8rem);color:var(--mute)}
+.iv-tag{font-family:var(--f-display);font-weight:700;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;background:var(--grad);color:var(--ink);padding:2px 8px;border-radius:99px;opacity:0;transform:scale(.6);transition:opacity .35s,transform .35s}
+.iv[data-step="1"] .iv-p img{filter:grayscale(.3) brightness(.95);animation:ivpulse 1.2s infinite}
+.iv[data-step="3"] .iv-p img{filter:none;transform:scale(1.06)}
+.iv[data-step="3"] .iv-tag{opacity:1;transform:scale(1)}
+@keyframes ivpulse{50%{transform:scale(1.08)}}
+.iv-chip{position:absolute;left:50%;top:22%;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:var(--gold);display:grid;place-items:center;opacity:0;z-index:2}
+.iv-chip svg{width:16px;height:16px}
+.iv[data-step="2"] .iv-chip{animation:ivfly 1.1s var(--d) ease-in-out forwards}
+@keyframes ivfly{0%{left:50%;top:22%;opacity:0}15%{opacity:1}85%{opacity:1}100%{left:var(--x);top:62%;opacity:0}}
+.iv-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.iv-steps li{display:flex;gap:10px;align-items:center;font-size:var(--s-sm);color:var(--mute);transition:color .3s}
+.iv-steps li span{flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:.8rem;background:var(--ink);box-shadow:inset 0 0 0 1px var(--ink-3);transition:background .3s,color .3s}
+.iv[data-step="1"] li[data-s="1"],.iv[data-step="2"] li[data-s="2"],.iv[data-step="3"] li[data-s="3"]{color:var(--paper);font-weight:600}
+.iv[data-step="1"] li[data-s="1"] span,.iv[data-step="2"] li[data-s="2"] span,.iv[data-step="3"] li[data-s="3"] span{background:var(--grad);color:var(--ink);box-shadow:none}
+@media(min-width:820px){.iv{grid-template-columns:1.5fr 1fr;align-items:center;padding:32px}}
+/* host network */
+.nw{margin-top:32px;background:var(--ink-2);border-radius:24px;padding:24px 16px;display:flex;flex-direction:column;align-items:center}
+.nw-you{display:flex;flex-direction:column;align-items:center;gap:4px}
+.nw-you img{width:72px;height:auto;border-radius:50%;box-shadow:0 0 0 4px var(--ink-2),0 0 0 6px rgba(247,148,29,.6)}
+.nw-you b{font-family:var(--f-display)}
+.nw-stem{width:2px;height:24px;background:var(--grad);margin:8px 0}
+.nw-grid{width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));gap:10px}
+.nh{background:var(--ink);border-radius:16px;padding:16px 10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;opacity:.25;transform:translateY(10px);transition:opacity .5s calc(var(--i)*.25s),transform .5s calc(var(--i)*.25s)}
+.nh-ic{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--ink-2);box-shadow:inset 0 0 0 1px rgba(247,148,29,.45)}
+.nh-ic svg{width:24px;height:24px}
+.nh b{font-family:var(--f-display);font-size:.88rem;line-height:1.2;margin-top:4px}
+.nh small{font-size:.7rem;color:var(--mute)}
+.nh-pl{display:flex;margin-top:8px}
+.nh-pl img{width:28px;height:28px;border-radius:50%;margin-left:-6px;box-shadow:0 0 0 2px var(--ink);opacity:0;transform:scale(.4);transition:opacity .35s calc(1.4s + var(--i)*.2s + var(--j)*.12s),transform .35s calc(1.4s + var(--i)*.2s + var(--j)*.12s)}
+.nh-pl img:first-child{margin-left:0}
+.nh .nh-pt{opacity:0;transition:opacity .4s calc(1.8s + var(--i)*.2s)}
+.nw[data-step="1"] .nh{opacity:1;transform:none}
+.nw[data-step="1"] .nh-pl img{opacity:1;transform:none}
+.nw[data-step="1"] .nh .nh-pt{opacity:1}
+.nw-cap{margin-top:18px;color:var(--mute);font-size:var(--s-sm);text-align:center;max-width:60ch}
+@media (prefers-reduced-motion:reduce){.nh,.nh-pl img,.nh .nh-pt{opacity:1!important;transform:none!important}}
+/* close */
+.close-band{overflow:hidden}
+.close-band::before{content:"";position:absolute;inset:0;background:url(assets/pattern.webp) center/900px auto repeat;opacity:.035;pointer-events:none}
+.recap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;margin-top:40px}
+.recap div{background:var(--ink-2);border-radius:20px;padding:22px}
+.recap b{font-family:var(--f-display);font-size:1.15rem;display:block;margin-bottom:6px}
+.recap span{color:var(--mute);font-size:var(--s-sm)}
+.cta{margin-top:56px;border-radius:28px;padding:clamp(28px,6vw,64px);background:var(--grad);color:var(--ink);display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.cta h2{font-size:var(--s-2xl)}
+.cta p{font-size:var(--s-lg);font-weight:500;max-width:30ch}
+.foot{padding-block:48px calc(48px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--ink-3)}
+.foot .wrap{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.foot .rg{background:#fff;border-radius:12px;padding:10px 14px;width:min(380px,100%)}
+.foot p{font-size:var(--s-xs);color:var(--mute);max-width:70ch}
+.foot .brand{display:flex;align-items:center;gap:14px}
+.foot .brand img{height:18px;width:auto}
+
+/* reveal: start visible-ish so the page reads even before motion runs */
+.js .rv{will-change:transform,opacity}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-h">
+  <div class="gate-card">
+    <img src="assets/mark.webp" alt="Buenas">
+    <h2 id="gate-h">This page is for 21 years old and above.</h2>
+    <p>Ang page na ito ay tungkol sa pagiging Buenas Host, isang online casino program na licensed ng PAGCOR.</p>
+    <div class="gate-btns">
+      <button class="btn btn-ghost" id="gate-no" type="button">I'm not</button>
+      <button class="btn btn-main" id="gate-yes" type="button">I'm 21+</button>
+    </div>
+    <p class="gate-no" id="gate-msg" hidden>Sorry, this page is only for 21 years old and above. Salamat sa pagiging tapat.</p>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <img src="assets/logo.webp" alt="Buenas">
+    <span class="pill">Affiliate Program</span>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+
+<!-- 1 HOOK -->
+<section class="band hero">
+  <div class="wrap">
+    <p class="eyebrow">Buenas Affiliate Program</p>
+    <h1 style="margin-top:18px"><span class="hw">Extra income.</span><span class="hw g">₱0 puhunan.</span><span class="hw">No quota.</span></h1>
+    <p class="lede hw">Kailangan mo lang ng phone at ng mga kakilala mo.</p>
+    <div class="scroll-cue hw"><i></i>Scroll down. 5 minutes lang 'to.</div>
+  </div>
+</section>
+
+<!-- 2 OPPORTUNITIES -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">Mga opportunity online ngayon</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:18ch">Marami nang paraan para kumita online.</h2>
+    <p class="lede rv" style="margin-top:18px">Pero halos lahat, may catch.</p>
+    <div class="opps">
+      <article class="opp rv"><img src="assets/sell.webp" alt="Woman packing orders for online selling" loading="lazy"><div><h3>Online selling</h3><p class="but">pero kailangan ng puhunan</p></div></article>
+      <article class="opp rv"><img src="assets/trade.webp" alt="Man watching trading charts on a laptop" loading="lazy"><div><h3>Trading at crypto</h3><p class="but">pero pwedeng malugi</p></div></article>
+      <article class="opp rv"><img src="assets/network.webp" alt="People in a network marketing meeting at a cafe" loading="lazy"><div><h3>Network marketing</h3><p class="but">pero may bayad at quota</p></div></article>
+    </div>
+    <div class="q-card rv">
+      <img src="assets/agent.webp" alt="Woman relaxing on a sofa while using her phone" loading="lazy">
+      <div class="q-body">
+        <span class="q-mark g">?</span>
+        <h3>Paano kung may opportunity na walang puhunan, walang quota, at walang ibebenta?</h3>
+        <div class="chips-row"><span class="chip">₱0 puhunan</span><span class="chip">No quota</span><span class="chip">Walang inventory</span></div>
+        <p class="note" style="font-size:var(--s-sm)">Sasagutin natin 'yan. Pero bago 'yan, alamin muna natin ang facts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2b FACTS DIVIDER -->
+<section class="band facts-div">
+  <div class="wrap">
+    <span class="fd-tag rv">Facts</span>
+    <h2 class="rv">Ang dapat mong malaman tungkol sa <span class="g">gaming industry.</span></h2>
+    <p class="lede rv" style="margin-top:18px">4 na facts lang, para klaro kung saan ka papasok.</p>
+    <ol class="fd-list">
+      <li class="rv"><span>1</span><div><b>Matagal na 'to</b><small>Ang history ng gaming, mula noon hanggang ngayon</small></div></li>
+      <li class="rv"><span>2</span><div><b>Malaki ang market</b><small>Magkano ang kinikita ng industry sa Pilipinas</small></div></li>
+      <li class="rv"><span>3</span><div><b>Hindi lahat legit</b><small>Licensed vs. unlicensed</small></div></li>
+      <li class="rv"><span>4</span><div><b>Paano kumikita ang casino</b><small>Isang simpleng formula</small></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 3 TIMELINE -->
+<section class="tl" id="timeline">
+  <div class="tl-pin">
+  <div class="tl-head"><div class="wrap">
+    <p class="fact-k rv"><span>Fact 1</span>Matagal na 'to</p>
+    <h2 class="rv" style="font-size:clamp(1.9rem,4.2vw,3rem);margin-top:12px;max-width:20ch">Libo-libong taon nang naglalaro ang tao.</h2>
+  </div></div>
+    <div class="tl-track" id="tl-track">
+      <div class="tl-stop"><figure><img src="assets/t-dice.webp" alt="Ancient dice" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">c. 2500 BCE</span><p>Isa sa pinakalumang dice na nahanap, mga 4,500 years old na. Ganun na katagal naglalaro ang tao.</p></div>
+      <div class="tl-stop ph"><figure><img src="assets/t-1521.webp" alt="Galleon offshore and a cockfight on the beach" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">1521</span><p>Pagdating nina Magellan sa Pilipinas, may sabong na sa Palawan. Isinulat 'yan ni Pigafetta, ang kasama nilang nagre-record ng biyahe.</p></div>
+      <div class="tl-stop"><figure><img src="assets/t-1638.webp" alt="Il Ridotto gaming hall in Venice" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">1638</span><p>Nagbukas ang Il Ridotto sa Venice, ang unang legal na gaming house na hawak ng gobyerno.</p></div>
+      <div class="tl-stop"><figure><img src="assets/t-1931.webp" alt="Welcome to Las Vegas sign by the highway" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">1931</span><p>Ginawang legal ng Nevada ang casino gaming. Dito nagsimulang lumaki ang Las Vegas.</p></div>
+      <div class="tl-stop ph"><figure><img src="assets/t-1977.webp" alt="Lit floating casino ship moored on Manila Bay at sunset" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">1977</span><p>Itinayo ang PAGCOR. Ang una nilang casino, nasa barko sa Manila Bay.</p></div>
+      <div class="tl-stop ph"><figure><img src="assets/t-1979.webp" alt="Guests arriving at a Manila hotel casino at night in the late 1970s" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">1979</span><p>Nagbukas ang unang land-based casino sa Pilipinas, sa Philippine Village Hotel sa Pasay.</p></div>
+      <div class="tl-stop"><figure><img src="assets/t-2004.webp" alt="Macau skyline at night" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">2004</span><p>Nagbukas ang Sands Macao, ang unang Las Vegas-style casino sa Macau.</p></div>
+      <div class="tl-stop ph"><figure><img src="assets/t-2009.webp" alt="Integrated resort in Manila at night" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">2009–2016</span><p>Sunod-sunod ang integrated resorts sa Manila: Resorts World, Solaire, City of Dreams at Okada.</p></div>
+      <div class="tl-stop ph"><figure><img src="assets/t-2020.webp" alt="Phone glowing in an empty casino" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">2020–2022</span><p>Nagsara ang mga casino nung pandemic. Lumipat ang laro sa phone.</p></div>
+      <div class="tl-stop ph"><figure><img src="assets/t-2025.webp" alt="Phone showing a rising bar chart" loading="lazy"></figure><div class="tl-line"></div><span class="tl-year">2025</span><p>First time na lagpas kalahati ng GGR ng industry ay galing sa online.</p></div>
+    </div>
+    <div class="tl-foot">
+      <div class="tl-prog" aria-hidden="true"><b id="tl-bar"></b></div>
+      <div class="tl-hint" id="tl-hint" aria-hidden="true"><span class="hand"><i></i><svg viewBox="0 0 24 24" fill="#F9F9F9"><path d="M9 11V4.5a1.5 1.5 0 0 1 3 0V10h.5V8.5a1.5 1.5 0 0 1 3 0V10h.5v-.5a1.5 1.5 0 0 1 3 0V15c0 3.9-2.7 7-6.5 7S6 19.6 5 16.8l-1.6-4.2a1.4 1.4 0 0 1 2.4-1.4L7.5 13V11z"/></svg></span><span id="tl-hint-t">I-swipe pataas para tumuloy</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3b TIMELINE STORY -->
+<section class="band tl-story">
+  <div class="wrap">
+    <p class="eyebrow rv">So, ano ang ibig sabihin nito?</p>
+    <ol class="story">
+      <li class="rv"><span class="yr">Noon pa</span><p>Matagal nang parte ng lifestyle ng tao ang gaming. Kaya nag-adapt ang buong mundo, pati ang Pilipinas, at ginawa itong regulated.</p></li>
+      <li class="rv"><span class="yr">2020</span><p>Dumating ang pandemic at nagbago ang behavior ng tao. Lumipat online ang karamihan ng industry, kasama ang casino.</p></li>
+      <li class="rv"><span class="yr">2025</span><p>Mas malaki na ang online kaysa land-based sa total GGR na nire-report ng PAGCOR.</p></li>
+      <li class="rv last"><span class="yr">Ngayon</span><p>Dito papasok ang opportunity mo <span class="g">bilang Buenas Host.</span></p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 4 MARKET -->
+<section class="band">
+  <div class="wrap">
+    <p class="fact-k rv"><span>Fact 2</span>Malaki ang market</p>
+    <div class="market-num rv"><span class="g num" id="mkt">₱396B</span></div>
+    <p class="lede rv" style="margin-top:16px">Philippine gaming industry GGR in 2025. <b style="color:var(--paper)">Kalahati na nito ay online.</b></p>
+    <div class="chart" id="chart" role="img" aria-label="Philippine gaming industry GGR 2019 to 2025 in billions of pesos, with the online share for 2022 to 2025: 14, 20, 42 and 51 percent">
+      <div class="bar"><b>₱256B</b><i style="height:64.6%"></i></div>
+      <div class="bar"><b>₱99B</b><i style="height:25%"></i></div>
+      <div class="bar"><b>₱113B</b><i style="height:28.5%"></i></div>
+      <div class="bar"><b>₱214B</b><i style="height:54%"><u style="height:14%"></u></i></div>
+      <div class="bar"><b>₱285B</b><i style="height:72%"><u style="height:20%"></u></i></div>
+      <div class="bar"><b>₱372B</b><i style="height:94%"><u style="height:42%"></u></i></div>
+      <div class="bar"><b>₱396B</b><i style="height:100%"><u style="height:51%"></u></i></div>
+    </div>
+    <div class="years num"><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span></div>
+    <div class="years share num" aria-hidden="true"><span></span><span></span><span></span><span>14%</span><span>20%</span><span>42%</span><span>51%</span></div>
+    <div class="legend"><span><s style="background:var(--ink-3)"></s>Total industry GGR</span><span><s style="background:var(--grad)"></s>Online share of GGR</span></div>
+    <p class="lede" style="margin-top:20px;font-size:var(--s-md)">Online went from <b style="color:var(--paper)">14% in 2022</b> to <b style="color:var(--paper)">51% in 2025</b>. Online na naglalaro ang karamihan.</p>
+    <p class="note" style="margin-top:14px">Source: Philippine gaming industry, as reported by PAGCOR. This is industry GGR, not PAGCOR's own revenue.</p>
+  </div>
+</section>
+
+<!-- 5 LICENSED VS NOT -->
+<section class="band" style="padding-top:0">
+  <div class="wrap">
+    <p class="fact-k rv"><span>Fact 3</span>Hindi lahat legit</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:18ch">Licensed vs. unlicensed.</h2>
+    <div class="vs">
+      <div class="vs-col yes rv">
+        <h3><span class="pagcor-badge"><img src="assets/pagcor.webp" alt=""></span>Licensed by PAGCOR</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#5FD38D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Verified accounts (KYC). Real people, 21 and up.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#5FD38D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Responsible gaming tools and rules.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#5FD38D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Secure deposits and withdrawals.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#5FD38D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Regulated and accountable sa gobyerno.</li>
+        </ul>
+      </div>
+      <div class="vs-col no rv">
+        <h3>Unlicensed</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ff6a5c" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>No KYC. Kahit sino, pwedeng pumasok.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ff6a5c" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>Minors can play.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ff6a5c" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>Pwedeng maglaho kasama ang pera mo.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ff6a5c" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>Walang mapupuntahan kapag may problema.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="news">
+      <img class="paper rv" src="assets/headlines.webp" alt="News headlines about the CICC crackdown on illegal online gambling sites" loading="lazy">
+      <div class="stack rv">
+        <div class="cicc"><img src="assets/cicc.webp" alt="CICC logo"><p>In 2025, the CICC uncovered 1,000+ illegal gambling sites and cut illegal links by 93%.</p></div>
+        <p class="lede">Hinahabol na ng gobyerno ang illegal sites. Kaya importante na licensed ang nire-recommend mo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 FORMULA -->
+<section class="band" style="padding-top:0">
+  <div class="wrap">
+    <p class="fact-k rv"><span>Fact 4</span>Paano kumikita ang casino</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:18ch">Isang simpleng formula lang.</h2>
+    <div class="formula" id="formula">
+      <span class="term ft">Total Bets</span><span class="op ft">−</span><span class="term ft">Winnings</span><span class="op ft">=</span><span class="term ggr ft">GGR</span>
+    </div>
+    <p class="lede rv" style="margin-top:24px">GGR (Gross Gaming Revenue) ang natitira pagkatapos bayaran ang lahat ng winnings ng players.</p>
+    <div class="example-box rv num">
+      <span class="eyebrow" style="color:var(--mute)">Halimbawa, sa isang linggo</span>
+      <div class="row"><span>Total bets ng players</span><b>₱100,000</b></div>
+      <div class="row"><span>Winnings na naibalik sa players</span><b>− ₱90,000</b></div>
+      <div class="row total"><span>GGR</span><span class="g">₱10,000</span></div>
+    </div>
+    <p class="note rv" style="margin-top:12px">Real-money bets only. Bonus chips are not included.</p>
+    <div class="bridge rv">
+      <p class="lede" style="margin:0 auto">Ang casino, kumikita sa GGR.</p>
+      <h2 style="margin-top:12px">Paano ka pwedeng kumita sa GGR?</h2>
+      <h2 style="margin-top:20px;font-size:var(--s-3xl)"><span class="g">Be a Buenas Host.</span></h2>
+      <p class="lede" style="margin:18px auto 0">Ikaw ang magiging bridge ng players papunta sa Buenas, at may kita ka mula sa GGR.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 MEET BUENAS -->
+<section class="band meet">
+  <div class="wrap">
+    <p class="eyebrow rv">Who is Buenas?</p>
+    <img class="logo rv" src="assets/logo.webp" alt="Buenas" style="margin-top:32px">
+    <p class="tag rv">The Philippines' most fun, secure and rewarding place to play.</p>
+    <div class="lic rv"><span class="lic-b"><img src="assets/pagcor.webp" alt=""></span>Licensed by PAGCOR</div>
+    <div class="facts num">
+      <div class="fact rv"><b>2022</b><span>In the market since February</span></div>
+            <div class="fact rv"><b>15+</b><span>Game providers</span></div>
+    </div>
+    <div class="vm">
+      <div class="rv"><span class="eyebrow">Vision</span><p>To be the place Filipinos choose to play, where every game comes with more fun and more rewards.</p></div>
+      <div class="rv"><span class="eyebrow">Mission</span><p>We share our buenas by making every visit easy to enjoy, exciting to come back to, and always rewarding.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 VIDEO -->
+<section class="band vid">
+  <div class="wrap">
+    <p class="eyebrow rv" style="text-align:center;margin-bottom:20px">Para kanino ang Buenas?</p>
+    <div class="vid-frame rv">
+      <video id="c2" src="assets/c2.mp4" poster="assets/c2-poster.webp" muted playsinline loop preload="metadata" aria-label="Short film: ten Filipinos enjoying their Buenas moment"></video>
+      <button class="vid-btn" id="vid-btn" type="button">Pause</button>
+    </div>
+    <div class="vid-cap rv"><h2>Para sa bawat Pilipinong deserve ng break. <span class="g">Masaya na, may rewards pa!</span></h2></div>
+  </div>
+</section>
+
+<!-- 9 REWARDS -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">Ano ang binibigay ng Buenas sa players mo?</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:18ch">Sa bawat laro, <span class="g">laging may balik.</span></h2>
+    <p class="lede rv" style="margin-top:18px">Kaya madaling i-recommend ang Buenas. I-tap ang card para makita ang details.</p>
+
+    <div class="group-label rv">Something extra when they deposit</div>
+    <div class="tiles">
+      <button class="tile rv" type="button" data-promo="mano"><span class="ic"><img src="assets/chips.webp" alt=""></span><h3>Buena Mano Bonus</h3><p>+50% bonus chips at 100 Buenas Coins sa unang deposit.</p><span class="more">Learn more →</span></button>
+      <button class="tile rv" type="button" data-promo="pa"><span class="ic"><img src="assets/chips.webp" alt=""></span><h3>10% / 5% Pa-Buenas</h3><p>Extra bonus chips sa reload, plus Buenas Coins.</p><span class="more">Learn more →</span></button>
+      <button class="tile rv" type="button" data-promo="boost"><span class="ic"><img src="assets/coins.webp" alt=""></span><h3>Buenas Coin Boost</h3><p>1 Buenas Coin for every ₱100 deposited.</p><span class="more">Learn more →</span></button>
+    </div>
+
+    <div class="group-label rv">Something extra while they play</div>
+    <div class="tiles">
+      <button class="tile rv" type="button" data-promo="rush"><span class="ic"><img src="assets/coins.webp" alt=""></span><h3>Buenas Coin Rush</h3><p>1 Buenas Coin for every ₱10,000 bet. Walang limit.</p><span class="more">Learn more →</span></button>
+    </div>
+
+    <div class="group-label rv">Something back, every time</div>
+    <div class="tiles">
+      <div class="tile static club rv">
+        <div class="club-l"><span class="ic"><img src="assets/club.webp" alt=""></span><h3>Buenas Club</h3><p>Ang loyalty program ng Buenas. Automatic member ang bawat verified player. Habang naglalaro, tumataas ang rank nila, at lumalaki ang rewards.</p>
+          <div class="ranks num" aria-label="Weekly cashback per rank"><span><b>2%</b>Rank 1</span><span><b>3%</b>Rank 2</span><span><b>5%</b>Rank 3</span><span><b>7.5%</b>Rank 4</span><span><b>10%</b>Rank 5</span></div>
+          <small class="note">Weekly cashback rate per rank</small>
+        </div>
+        <ul class="club-list">
+          <li><b>Weekly cashback</b><span>2% hanggang 10%, depende sa rank. Lumalabas every Sunday, at pwedeng i-withdraw agad.</span></li>
+          <li><b>Prize Wheel spins</b><span>Pag umabot sa Rank 3, 4 o 5, may spin sila para sa chips, Buenas Coins o gadgets.</span></li>
+          <li><b>Daily login bonus</b><span>Para sa Rank 3 hanggang 5. Mag-login araw-araw, may bonus chips.</span></li>
+        </ul>
+      </div>
+      <div class="tile static rv"><span class="ic"><img src="assets/mall.webp" alt=""></span><h3>Buenas Mall</h3><p>Ipalit ang Buenas Coins sa chips at rewards, anytime, as often as they like.</p></div>
+      <div class="tile static rv"><span class="ic"><img src="assets/gadgets.webp" alt="" style="height:96px"></span><h3>Buenas Deals</h3><p>Every month, gadgets and chips at up to 90% off in Buenas Coins. Unahan!</p></div>
+      <div class="tile static rv"><span class="soon">Coming soon</span><span class="ic"><img src="assets/partner.webp" alt=""></span><h3>Partner discounts</h3><p>Discounts sa mga partner establishments.</p></div>
+    </div>
+
+    <div class="loop">
+      <div class="stack rv">
+        <h3 style="font-size:var(--s-xl)">Kaya <span class="g">bumabalik ang players.</span></h3>
+        <p class="lede">Naglalaro sila, nag-iipon ng Buenas Coins, pinapalit sa chips o rewards, tapos laro ulit.</p>
+      </div>
+      <div class="loop-ring rv" id="loop">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="#3A2E39" stroke-width="1.2" stroke-dasharray="2 2.4"/><circle id="loop-arc" cx="50" cy="50" r="38" fill="none" stroke="url(#lg)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="60 239" transform="rotate(-90 50 50)"/><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#FFD700"/><stop offset="1" stop-color="#FF2A00"/></linearGradient></defs></svg>
+        <div class="loop-center"><img src="assets/coins.webp" alt=""></div>
+        <span class="loop-step on" style="left:50%;top:12%">Play</span>
+        <span class="loop-step" style="left:88%;top:50%">Collect coins</span>
+        <span class="loop-step" style="left:50%;top:88%">Redeem</span>
+        <span class="loop-step" style="left:12%;top:50%">Play again</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 HOST PRIVILEGES -->
+<section class="hosts-hero">
+  <img src="assets/hosts.webp" alt="Two Buenas Hosts in semi-formal clothes smiling inside the Buenas lounge" loading="lazy">
+  <div class="wrap"><p class="eyebrow">Buenas Host privileges</p><h2 style="margin-top:12px">Bilang Buenas Host, <span class="g">ito ang privileges mo.</span></h2></div>
+</section>
+<section class="band" style="padding-top:48px">
+  <div class="wrap">
+    <div class="priv">
+      <ol>
+        <li class="rv"><svg viewBox="0 0 32 32" fill="none" stroke="#F7941D" stroke-width="2" stroke-linejoin="round"><path d="M16 3l11 4v8c0 7-5 12-11 14C10 27 5 22 5 15V7z"/><path d="M11 16l4 4 7-8" stroke-linecap="round"/></svg><div><b>A licensed brand to represent</b><span>PAGCOR-licensed, kaya madali mong maipapaliwanag na legit.</span></div></li>
+        <li class="rv"><svg viewBox="0 0 32 32" fill="none" stroke="#F7941D" stroke-width="2" stroke-linejoin="round"><rect x="4" y="6" width="24" height="16" rx="3"/><path d="M11 27h10M16 22v5" stroke-linecap="round"/></svg><div><b>A ready platform</b><span>Games, promos, rewards at support. Ikaw ang mag-iinvite, Buenas na ang bahala sa iba.</span></div></li>
+        <li class="rv"><svg viewBox="0 0 32 32" fill="none" stroke="#F7941D" stroke-width="2" stroke-linejoin="round"><rect x="9" y="3" width="14" height="26" rx="3"/><path d="M14 25h4" stroke-linecap="round"/></svg><div><b>Buenas Host App</b><span>Dashboard ng players at kita mo, one-tap invite link, at marketing tools.</span></div></li>
+        <li class="rv"><svg viewBox="0 0 32 32" fill="none" stroke="#F7941D" stroke-width="2" stroke-linejoin="round"><path d="M4 11l12-6 12 6-12 6z"/><path d="M9 14v6c0 2 3 4 7 4s7-2 7-4v-6" /></svg><div><b>Buenas Host Academy</b><span>May training, kaya alam mo agad ang gagawin.</span></div></li>
+        <li class="rv"><svg viewBox="0 0 32 32" fill="none" stroke="#F7941D" stroke-width="2" stroke-linejoin="round"><rect x="4" y="7" width="24" height="18" rx="3"/><path d="M4 12h24M9 7V4M23 7V4" stroke-linecap="round"/></svg><div><b>Weekly and monthly payouts</b><span>Player commission every week. Host override every end of the month.</span></div></li>
+      </ol>
+      <div class="phone rv"><img src="assets/appscreen.webp" alt="Buenas Host App login screen" loading="lazy"></div>
+    </div>
+    <div class="free">
+      <h3 class="rv">Magkano lahat 'to?</h3>
+      <div class="zero num rv"><span class="g" id="zero">₱0.00</span></div>
+      <p class="lede rv" style="margin:14px auto 0">Walang registration fee. Wala kang puhunan na kailangang ilabas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11 PLAYER COMMISSION -->
+<section class="band" style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow rv">Way to earn #1 · Player Commission</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:20ch">Buenas earns from GGR. <span class="g">You earn 20% of it, every week.</span></h2>
+    <div class="wk rv"><span class="wk-pill">Weekly</span><span>Bawat linggo, kinukuha ang <b>total weekly GGR</b> ng lahat ng players mo, tapos 20% nito ang kita mo.</span></div>
+    <p class="lede rv" style="margin-top:18px">Kasama ang lahat ng game types.</p>
+    <div class="games rv"><span class="chip">Slots</span><span class="chip">Fishing</span><span class="chip">Arcade</span><span class="chip">Live casino</span><span class="chip">Table games</span><span class="chip">at iba pa</span></div>
+    <div class="iv rv" id="iv" data-step="3">
+      <div class="iv-stage">
+        <svg class="iv-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="50" y1="22" x2="14" y2="70" style="--d:0.0s"/><line x1="50" y1="22" x2="38" y2="70" style="--d:0.35s"/><line x1="50" y1="22" x2="62" y2="70" style="--d:0.7s"/><line x1="50" y1="22" x2="86" y2="70" style="--d:1.0499999999999998s"/></svg>
+        <div class="iv-host"><img src="assets/av-host.webp" alt=""><b>Ikaw</b></div>
+        <span class="iv-chip" style="--x:14%;--d:0.0s"><svg viewBox="0 0 24 24" fill="none" stroke="#231B23" stroke-width="2.4" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span class="iv-chip" style="--x:38%;--d:0.35s"><svg viewBox="0 0 24 24" fill="none" stroke="#231B23" stroke-width="2.4" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span class="iv-chip" style="--x:62%;--d:0.7s"><svg viewBox="0 0 24 24" fill="none" stroke="#231B23" stroke-width="2.4" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span class="iv-chip" style="--x:86%;--d:1.0499999999999998s"><svg viewBox="0 0 24 24" fill="none" stroke="#231B23" stroke-width="2.4" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span>
+        <div class="iv-p" style="left:14%"><img src="assets/av-player.webp" alt=""><span class="iv-tag">Player</span><small>Barkada</small></div><div class="iv-p" style="left:38%"><img src="assets/av-player.webp" alt=""><span class="iv-tag">Player</span><small>Kapitbahay</small></div><div class="iv-p" style="left:62%"><img src="assets/av-player.webp" alt=""><span class="iv-tag">Player</span><small>Ka-work</small></div><div class="iv-p" style="left:86%"><img src="assets/av-player.webp" alt=""><span class="iv-tag">Player</span><small>Pinsan</small></div>
+      </div>
+      <ol class="iv-steps">
+        <li data-s="1"><span>1</span>May kakilala kang naglalaro na</li>
+        <li data-s="2"><span>2</span>I-invite mo gamit ang link mo</li>
+        <li data-s="3"><span>3</span>Player mo na sila, at kasama na sa 20% mo</li>
+      </ol>
+    </div>
+    <div class="pc">
+      <div class="pc-diagram rv num" id="pc">
+        <span class="eyebrow" style="color:var(--mute)">Halimbawa: 3 players mo, sa loob ng 1 linggo</span>
+        <div class="pc-legend"><span><s class="pos"></s>Mas malaki ang bets kaysa winnings</span><span><s class="neg"></s>Mas malaki ang winnings ng player</span></div>
+        <div class="pl"><img class="av" src="assets/av-player.webp" alt=""><div class="pl-info"><div class="pl-name"><b>Player A</b><span>Bets ₱30,000 · Winnings ₱20,000</span></div><span class="track"><span class="fill pos" style="width:40%"></span></span></div><span class="amt pos">₱10,000</span></div>
+        <div class="pl"><img class="av" src="assets/av-player.webp" alt=""><div class="pl-info"><div class="pl-name"><b>Player B</b><span>Bets ₱10,000 · Winnings ₱7,500</span></div><span class="track"><span class="fill pos" style="width:10%"></span></span></div><span class="amt pos">₱2,500</span></div>
+        <div class="pl"><img class="av" src="assets/av-player.webp" alt=""><div class="pl-info"><div class="pl-name"><b>Player C</b><span>Bets ₱5,000 · Winnings ₱7,500</span></div><span class="track"><span class="fill neg" style="width:10%"></span></span><span class="pl-cap">Mas malaki ang winnings ni Player C ngayong linggo.</span></div><span class="amt neg">−₱2,500</span></div>
+        <div class="pc-total">
+          <div class="row"><span>Total weekly GGR</span><b>₱10,000</b></div>
+          <div class="row"><span>× Player commission</span><b>20%</b></div>
+          <div class="pc-host" style="margin-top:8px"><img class="av h" src="assets/av-host.webp" alt="You, the host"><div><span class="note">Kita mo ngayong linggo</span><div class="big g" id="pc-out">₱2,000</div></div></div>
+        </div>
+      </div>
+      <div class="callouts">
+        <div class="callout rv"><b>Bakit "combined"?</b><span>Normal lang na may players na nakakakuha ng winnings at may hindi. Iba-iba 'yan bawat linggo. Kaya naka-base ang 20% mo sa combined GGR ng lahat ng players mo, hindi kada player.</span></div>
+        <div class="callout rv"><b>Walang limit sa players.</b><span>Pwede kang mag-invite ng kahit ilang players. The bigger your network, the bigger your 20%.</span></div>
+        <div class="callout rv"><b>Except:</b><span>Under 21 years old, at government officials and employees. Hindi sila pwedeng maging player o host.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 CALCULATOR -->
+<section class="band" id="calc-sec" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow rv">Calculator</p>
+    <h2 class="rv" style="font-size:var(--s-xl);margin-top:14px;max-width:24ch">Tingnan natin kung magkano ang 20% mo.</h2>
+    <p class="lede rv" style="margin-top:14px">I-adjust ang number of players at ang GGR para makita ang example.</p>
+    <form class="calc rv" id="calc" onsubmit="return false">
+      <div class="stack">
+        <div class="field">
+          <label for="players">Number of players <output id="o-players" for="players" class="num">20</output></label>
+          <input type="range" id="players" min="1" max="100" step="1" value="20">
+        </div>
+        <div class="field">
+          <label for="ggr">Average weekly GGR per player <output id="o-ggr" for="ggr" class="num">₱1,000</output></label>
+          <input type="range" id="ggr" min="0" max="100" step="1" value="1" aria-valuetext="₱1,000">
+          <div class="scale num" aria-hidden="true"><span>₱500</span><span>₱2,000,000</span></div>
+        </div>
+        <div class="field">
+          <span class="note">Try an example:</span>
+          <div class="presets">
+            <button type="button" class="preset" data-p="1" data-g="500000" aria-pressed="false">1 high-roller</button>
+            <button type="button" class="preset" data-p="20" data-g="1000" aria-pressed="true">20 casual players</button>
+            <button type="button" class="preset" data-p="80" data-g="1500" aria-pressed="false">Malaking barkada network</button>
+          </div>
+        </div>
+      </div>
+      <div class="stack">
+        <div class="calc-steps num">
+          <div class="cs-row"><span><b id="c-p">20 players</b> × <b id="c-g">₱1,000</b></span></div>
+          <div class="cs-row tot"><span>Total weekly GGR</span><b id="r-tot">₱20,000</b></div>
+          <div class="cs-row"><span>× Player commission</span><b>20%</b></div>
+        </div>
+        <div class="result num">
+          <div><span>Kita mo kada linggo</span><b id="r-week">₱4,000</b></div>
+          <div class="m"><span>Kada buwan (× 4 weeks)</span><b id="r-month">₱16,000</b></div>
+        </div>
+      </div>
+      <div class="warn"><svg viewBox="0 0 24 24" fill="none" stroke="#FDD3A0" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg><span><b>Example lang 'to.</b> Sa industry na 'to, hindi natin alam kung ang host ay magkakaroon ng isang high-roller o ng malaking network ng small players. Kaya ang number of players at GGR dito ay for example purposes only. Ang actual na kita mo ay depende sa activity ng players mo.</span></div>
+    </form>
+  </div>
+</section>
+
+<!-- 13 OVERRIDE -->
+<section class="band" id="override">
+  <div class="wrap">
+    <p class="eyebrow rv">Way to earn #2 · Host Override</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:20ch">Invite others to become hosts. <span class="g">Earn up to 5% more, every month.</span></h2>
+    <div class="wk rv"><span class="wk-pill">Monthly</span><span>Bawat buwan, kinukuha ang <b>total monthly GGR</b> ng lahat ng hosts na na-invite mo, tapos ang rate ng tier mo ang kita mo. Paid every end of the month.</span></div>
+    <p class="lede rv" style="margin-top:18px">Pwede ka ring mag-invite ng ibang gustong maging host. Mas maraming active hosts, mas mataas ang tier at rate mo.</p>
+
+    <div class="nw rv" id="nw" data-step="1">
+      <div class="nw-you"><img src="assets/av-host.webp" alt=""><b>Ikaw</b></div>
+      <i class="nw-stem"></i>
+      <div class="nw-grid"><div class="nh" style="--i:0"><span class="nh-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#F7941D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span><b>Computer shop owner</b><small>Host mo</small><span class="nh-pl"><img src="assets/av-player.webp" alt="" style="--j:0"><img src="assets/av-player.webp" alt="" style="--j:1"><img src="assets/av-player.webp" alt="" style="--j:2"></span><small class="nh-pt">+ players nila</small></div><div class="nh" style="--i:1"><span class="nh-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#F7941D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l2-5h14l2 5"/><path d="M3 9c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3"/><path d="M5 12v8h14v-8"/><path d="M10 20v-5h4v5"/></svg></span><b>Sari-sari store owner</b><small>Host mo</small><span class="nh-pl"><img src="assets/av-player.webp" alt="" style="--j:0"><img src="assets/av-player.webp" alt="" style="--j:1"><img src="assets/av-player.webp" alt="" style="--j:2"></span><small class="nh-pt">+ players nila</small></div><div class="nh" style="--i:2"><span class="nh-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#F7941D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-7h5l3 7"/><path d="M14 10V6h4"/></svg></span><b>Tricycle driver</b><small>Host mo</small><span class="nh-pl"><img src="assets/av-player.webp" alt="" style="--j:0"><img src="assets/av-player.webp" alt="" style="--j:1"><img src="assets/av-player.webp" alt="" style="--j:2"></span><small class="nh-pt">+ players nila</small></div><div class="nh" style="--i:3"><span class="nh-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#F7941D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5L20 18M8.5 16.5L20 6"/></svg></span><b>Barbero</b><small>Host mo</small><span class="nh-pl"><img src="assets/av-player.webp" alt="" style="--j:0"><img src="assets/av-player.webp" alt="" style="--j:1"><img src="assets/av-player.webp" alt="" style="--j:2"></span><small class="nh-pt">+ players nila</small></div><div class="nh" style="--i:4"><span class="nh-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#F7941D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg></span><b>Online seller</b><small>Host mo</small><span class="nh-pl"><img src="assets/av-player.webp" alt="" style="--j:0"><img src="assets/av-player.webp" alt="" style="--j:1"><img src="assets/av-player.webp" alt="" style="--j:2"></span><small class="nh-pt">+ players nila</small></div><div class="nh" style="--i:5"><span class="nh-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#F7941D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M8 7c0-1.5 1-2 1-3M12 7c0-1.5 1-2 1-3M16 7c0-1.5 1-2 1-3"/></svg></span><b>Karinderya owner</b><small>Host mo</small><span class="nh-pl"><img src="assets/av-player.webp" alt="" style="--j:0"><img src="assets/av-player.webp" alt="" style="--j:1"><img src="assets/av-player.webp" alt="" style="--j:2"></span><small class="nh-pt">+ players nila</small></div></div>
+      <p class="nw-cap">Kahit sino na 21 pataas, pwedeng maging host o player. Bawat host na na-invite mo, may sarili ring players. Ang combined GGR nila ang basehan ng override mo.</p>
+    </div>
+    <p class="rv" style="margin-top:28px;font-family:var(--f-display);font-weight:600">5 tiers, Bronze to Diamond. Mas maraming active hosts na na-invite mo, mas mataas ang rate mo.</p>
+    <div class="ov-ctl rv">
+      <div class="field">
+        <label for="hosts">Number of active hosts na na-invite mo <output id="o-hosts" for="hosts" class="num">3</output></label>
+        <input type="range" id="hosts" min="1" max="40" step="1" value="3">
+      </div>
+      <div class="field">
+        <label for="hostggr">Average monthly GGR per invited host <output id="o-hostggr" for="hostggr" class="num">₱50,000</output></label>
+        <input type="range" id="hostggr" min="0" max="100" step="1" value="8" aria-valuetext="₱50,000">
+        <div class="scale num" aria-hidden="true"><span>₱10,000</span><span>₱2,000,000</span></div>
+      </div>
+    </div>
+    <div class="ov-res rv num" aria-live="polite">
+      <div><span>Tier mo</span><b id="ov-tier">Silver · 2%</b></div>
+      <div><span id="ov-tot-eq">3 hosts × ₱50,000</span><span style="margin-top:6px">Total monthly GGR ng hosts mo</span><b id="ov-tot">₱150,000</b></div>
+      <div><span id="ov-eq">₱150,000 × 2%</span><span style="margin-top:6px">Kita mo kada buwan</span><b class="g" id="ov-out">₱3,000<small>/month</small></b></div>
+    </div>
+    <div class="stairs" id="stairs">
+      <div class="step rv" data-n="1" data-r="1"><img src="assets/gem1.webp" alt=""><span class="nm">Bronze</span><span class="blk" style="height:64px;background:rgba(247,148,29,0.14)"><b>1%</b><span>1 host</span></span><span class="inc num"><b>₱0</b><small>/month</small></span></div>
+      <div class="step rv" data-n="3" data-r="2"><img src="assets/gem2.webp" alt=""><span class="nm">Silver</span><span class="blk" style="height:94px;background:rgba(247,148,29,0.24)"><b>2%</b><span>3 hosts</span></span><span class="inc num"><b>₱0</b><small>/month</small></span></div>
+      <div class="step rv" data-n="5" data-r="3"><img src="assets/gem3.webp" alt=""><span class="nm">Gold</span><span class="blk" style="height:124px;background:rgba(247,148,29,0.36)"><b>3%</b><span>5 hosts</span></span><span class="inc num"><b>₱0</b><small>/month</small></span></div>
+      <div class="step rv" data-n="10" data-r="4"><img src="assets/gem4.webp" alt=""><span class="nm">Platinum</span><span class="blk" style="height:154px;background:rgba(247,148,29,0.5)"><b>4%</b><span>10 hosts</span></span><span class="inc num"><b>₱0</b><small>/month</small></span></div>
+      <div class="step rv" data-n="20" data-r="5"><img src="assets/gem5.webp" alt=""><span class="nm">Diamond</span><span class="blk" style="height:184px;background:rgba(247,148,29,0.66)"><b>5%</b><span>20 hosts</span></span><span class="inc num"><b>₱0</b><small>/month</small></span></div>
+    </div>
+    <div class="tier-arrow rv" aria-hidden="true"><span>Mas maraming active hosts</span><i></i><span>Mas mataas na rate</span></div>
+    <p class="note rv" style="margin-top:14px">Sa ilalim ng bawat tier: ang potential monthly income kung nasa minimum hosts ka ng tier na 'yan, gamit ang average GGR na pinili mo. Example lang.</p>
+    <div class="keep rv"><span class="chip">Based on the combined GGR of the hosts you invite</span><span class="chip">Paid every end of the month</span><span class="chip" style="border-color:var(--orange)">Buo pa rin ang 20% nila</span></div>
+  </div>
+</section>
+
+<!-- 13b STACK -->
+<section class="band" id="stack" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow rv">Pag pinagsama ang 2 ways to earn</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:20ch">Player commission <span class="g">+ host override.</span></h2>
+    <p class="lede rv" style="margin-top:18px">Gamit ang numbers na pinili mo sa taas. Palitan mo para makita ang iba't ibang combination.</p>
+    <div class="stack-grid">
+      <div class="st-card rv">
+        <span class="eyebrow">Way #1 · Player commission</span>
+        <p class="st-eq num" id="st-pc-eq">Total weekly GGR ₱20,000 (20 players × ₱1,000) × 20% × 4 weeks</p>
+        <div class="st-row num"><span>Per month</span><b id="st-pc-m">₱16,000</b></div>
+        <a class="st-link" href="#calc-sec">Baguhin ang players ↑</a>
+      </div>
+      <div class="st-plus" aria-hidden="true">+</div>
+      <div class="st-card rv">
+        <span class="eyebrow">Way #2 · Host override</span>
+        <p class="st-eq num" id="st-ov-eq">Silver: total monthly GGR ₱150,000 (3 hosts × ₱50,000) × 2%</p>
+        <div class="st-row num"><span>Per month</span><b id="st-ov-m">₱3,000</b></div>
+        <a class="st-link" href="#override">Baguhin ang hosts ↑</a>
+      </div>
+    </div>
+    <div class="st-total rv num" aria-live="polite">
+      <div><span>Total potential income per month</span><b class="g" id="st-m">₱19,000</b></div>
+    </div>
+    <p class="note rv" style="margin-top:14px">Player commission is paid weekly; host override is paid every end of the month. Examples only. Actual earnings depend on your players' and hosts' activity.</p>
+  </div>
+</section>
+
+<!-- 14 CLOSE --><!-- 14 CLOSE -->
+<section class="band close-band">
+  <div class="wrap">
+    <p class="eyebrow rv">In short</p>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:18ch">Ito ang Buenas Host opportunity.</h2>
+    <div class="recap">
+      <div class="rv"><b>Licensed at legit</b><span>PAGCOR-licensed platform, in the market since 2022.</span></div>
+      <div class="rv"><b>Laging may balik</b><span>Promos, Buenas Coins at rewards na nagpapabalik sa players mo.</span></div>
+      <div class="rv"><b>20% + up to 5%</b><span>Player commission every week, host override every month. ₱0 puhunan.</span></div>
+    </div>
+    <div class="mindset">
+      <p class="eyebrow rv">Ang role mo bilang host</p>
+      <h2 class="rv" style="font-size:var(--s-2xl);max-width:18ch">Ikaw ang <span class="g">bridge.</span></h2>
+      <div class="bridge-flow rv" aria-hidden="true">
+        <div class="bf-node"><img src="assets/av-player.webp" alt=""><b>Players</b><small>Naglalaro na sa casino o ibang online platforms</small></div>
+        <i class="bf-arrow"></i>
+        <div class="bf-node"><img src="assets/av-host.webp" alt=""><b>Ikaw</b><small>Buenas Host</small></div>
+        <i class="bf-arrow"></i>
+        <div class="bf-node"><span class="bf-mark"><img src="assets/mark.webp" alt=""></span><b>Buenas</b><small>Promos, Buenas Coins, Club, Mall at Deals</small></div>
+      </div>
+      <div class="ms rv"><b>May players na, with or without Buenas.</b><span>Naglalaro na sila sa mga casino at sa ibang online platforms. Hindi mo sila kailangang kumbinsihin na maglaro.</span></div>
+      <div class="ms rv"><b>Ikaw ang magdadala sa kanila sa Buenas.</b><span>Ipakilala mo sa kanila ang Buenas para maranasan nila ang promos at rewards dito. Kapalit nito, may kita ka.</span></div>
+      <div class="ms rv"><b>Kaya tuloy-tuloy ang kita mo.</b><span>Sa Buenas, laging may balik sa players, kaya gusto nilang mag-stay. Habang nandito sila, tuloy ang income opportunity mo.</span></div>
+    </div>
+    <div class="cta rv">
+      <h2>Ready ka na?</h2>
+      <p>Kausapin ang host na nagbigay sa'yo nito. Sila ang tutulong sa'yo mag-sign up.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="brand"><img src="assets/logo.webp" alt="Buenas"><span class="note">Licensed by PAGCOR</span></div>
+    <img class="rg" src="assets/rg.webp" alt="Gambling for 21 years old and above only. Gambling can be addictive, know when to stop.">
+    <p>Examples only. Actual earnings depend on your players' activity. Real-money bets only; bonus chips are not included in GGR. Open to 21 years old and above. Government officials and employees are not allowed to join.</p>
+  </div>
+</footer>
+
+<div class="sheet-bg" id="sheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h">
+    <span class="eyebrow" id="sheet-k"></span>
+    <h3 id="sheet-h"></h3>
+    <ul id="sheet-l"></ul>
+    <button type="button" class="btn btn-ghost close" id="sheet-x">Close</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+  const peso=n=>'₱'+Math.round(n).toLocaleString('en-PH');
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasGsap=!!(window.gsap&&window.ScrollTrigger)&&!reduce;
+
+  /* age gate: always start at the top */
+  try{ if('scrollRestoration' in history) history.scrollRestoration='manual' }catch(e){}
+  const toTop=()=>{ try{ if(document.activeElement&&document.activeElement!==document.body) document.activeElement.blur() }catch(e){} window.scrollTo(0,0); document.documentElement.scrollTop=0; document.body.scrollTop=0; };
+  const gate=$('#gate');
+  let ok=false; try{ok=sessionStorage.getItem('buenas21')==='1'}catch(e){}
+  if(ok) gate.hidden=true; else { document.documentElement.style.overflow='hidden'; toTop(); setTimeout(toTop,0); window.addEventListener('load',toTop); }
+  $('#gate-yes').onclick=()=>{
+    gate.hidden=true; document.documentElement.style.overflow='';
+    try{sessionStorage.setItem('buenas21','1')}catch(e){}
+    toTop(); if(hasGsap){ ScrollTrigger.refresh(); } toTop();
+    requestAnimationFrame(()=>{ toTop(); requestAnimationFrame(toTop); });
+    intro();
+  };
+  $('#gate-no').onclick=()=>{$('#gate-msg').hidden=false;$('.gate-btns').hidden=true};
+
+  /* promo sheet */
+  const promos={
+    mano:['Para sa first deposit','Buena Mano Bonus',['Deposit ₱500 or more on the first deposit.','Get 50% bonus chips, up to ₱750.','Plus 100 Buenas Coins.','Bonus chips have a 5x turnover before withdrawal.']],
+    pa:['Para sa reloads','10% / 5% Pa-Buenas',['Minimum reload deposit: ₱100.','<b>10% Pa-Buenas:</b> 10% bonus chips, once a day, plus 1 Buenas Coin for every ₱100 (up to 10 coins a day). 3x turnover on the bonus chips.','<b>5% Pa-Buenas:</b> 5% bonus chips, pwede ilang beses sa isang araw, plus 1 Buenas Coin for every ₱100 (up to 5 coins a day). 1.5x turnover on the bonus chips.','Bonus chips up to ₱750 a day, for slots and fishing games.']],
+    boost:['Para sa deposits','Buenas Coin Boost',['1 Buenas Coin for every ₱100 deposited.','Up to 20 Buenas Coins a day.']],
+    rush:['Habang naglalaro','Buenas Coin Rush',['1 Buenas Coin for every ₱10,000 in valid bets.','No limit sa coins na pwedeng makuha.','Real-money bets only.']]
+  };
+  const sheet=$('#sheet'); let lastBtn=null;
+  $$('[data-promo]').forEach(b=>b.addEventListener('click',()=>{
+    const p=promos[b.dataset.promo]; lastBtn=b;
+    $('#sheet-k').textContent=p[0]; $('#sheet-h').textContent=p[1];
+    $('#sheet-l').innerHTML=p[2].map(t=>'<li>'+t+'</li>').join('');
+    sheet.hidden=false; $('#sheet-x').focus();
+  }));
+  const closeSheet=()=>{sheet.hidden=true; if(lastBtn) lastBtn.focus()};
+  $('#sheet-x').onclick=closeSheet;
+  sheet.addEventListener('click',e=>{if(e.target===sheet)closeSheet()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!sheet.hidden)closeSheet()});
+
+  /* calculator */
+  const pl=$('#players'), gg=$('#ggr');
+  /* GGR slider: 0-100 mapped to ₱500 ... ₱2,000,000 in friendly steps */
+  const GV=(()=>{const a=[];for(let v=500;v<=10000;v+=500)a.push(v);for(let v=15000;v<=100000;v+=5000)a.push(v);for(let v=125000;v<=500000;v+=25000)a.push(v);for(let v=600000;v<=2000000;v+=100000)a.push(v);return a})();
+  gg.max=GV.length-1;
+  const gval=()=>GV[Math.min(GV.length-1,Math.max(0,+gg.value))];
+  const gidx=v=>{let i=0;GV.forEach((x,k)=>{if(Math.abs(x-v)<Math.abs(GV[i]-v))i=k});return i};
+  gg.value=gidx(1000);
+  function calc(){
+    const p=+pl.value, g=gval(), tot=p*g, w=tot*0.2;
+    $('#o-players').textContent=p; $('#o-ggr').textContent=peso(g); gg.setAttribute('aria-valuetext',peso(g));
+    $('#c-p').textContent=p+(p>1?' players':' player'); $('#c-g').textContent=peso(g); $('#r-tot').textContent=peso(tot);
+    $('#r-week').textContent=peso(w); $('#r-month').textContent=peso(w*4);
+    $$('.preset[data-p]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.p===p&&+b.dataset.g===g)));
+  }
+  pl.addEventListener('input',calc); gg.addEventListener('input',calc);
+  $$('.preset[data-p]').forEach(b=>b.addEventListener('click',()=>{pl.value=b.dataset.p;gg.value=gidx(+b.dataset.g);calc()}));
+  calc();
+
+  /* override ladder + stacked earnings */
+  const TIERS=[['Bronze',1,1],['Silver',3,2],['Gold',5,3],['Platinum',10,4],['Diamond',20,5]];
+  const hg=$('#hostggr'), hn=$('#hosts');
+  const short=v=>v>=1e6?'₱'+(+(v/1e6).toFixed(v%1e6?1:0))+'M':v>=1e4?'₱'+(+(v/1e3).toFixed(v%1e3?1:0))+'K':peso(v);
+  const HV=(()=>{const a=[];for(let v=10000;v<=100000;v+=5000)a.push(v);for(let v=125000;v<=500000;v+=25000)a.push(v);for(let v=600000;v<=2000000;v+=100000)a.push(v);return a})();
+  hg.max=HV.length-1; hg.value=HV.indexOf(50000);
+  const hval=()=>HV[Math.min(HV.length-1,Math.max(0,+hg.value))];
+  function stack(){
+    const avg=hval(), n=+hn.value; $('#o-hostggr').textContent=peso(avg); hg.setAttribute('aria-valuetext',peso(avg)); $('#o-hosts').textContent=n;
+    let ti=0; TIERS.forEach((t,i)=>{ if(n>=t[1]) ti=i });
+    const [tn,,r]=TIERS[ti], ovm=n*avg*r/100;
+    $$('#stairs .step').forEach((st,i)=>{ st.querySelector('.inc b').textContent=short(st.dataset.n*avg*st.dataset.r/100); st.classList.toggle('on',i===ti) });
+    $('#ov-tier').textContent=tn+' · '+r+'%';
+    $('#ov-tot-eq').textContent=n+' host'+(n>1?'s':'')+' × '+peso(avg); $('#ov-tot').textContent=peso(n*avg);
+    $('#ov-eq').textContent=peso(n*avg)+' × '+r+'%';
+    $('#ov-out').innerHTML=peso(ovm)+'<small>/month</small>';
+    const p=+pl.value, g=gval(), pcm=p*g*0.2*4;
+    $('#st-pc-eq').textContent='Total weekly GGR '+peso(p*g)+' ('+p+' player'+(p>1?'s':'')+' × '+peso(g)+') × 20% × 4 weeks';
+    $('#st-pc-m').textContent=peso(pcm);
+    $('#st-ov-eq').textContent=tn+': total monthly GGR '+peso(n*avg)+' ('+n+' host'+(n>1?'s':'')+' × '+peso(avg)+') × '+r+'%';
+    $('#st-ov-m').textContent=peso(ovm);
+    $('#st-m').textContent=peso(pcm+ovm);
+  }
+  [hg,hn,pl,gg].forEach(el=>el.addEventListener('input',stack));
+  $$('.preset[data-p]').forEach(b=>b.addEventListener('click',stack));
+  stack();
+
+  /* slider demo: first time a calculator comes into view, nudge its sliders and return */
+  (function(){
+    if(reduce || !('IntersectionObserver' in window)) return;
+    function demo(el,to,dur){
+      return new Promise(res=>{
+        const from=+el.value, t0=performance.now(); let stop=false;
+        const cancel=()=>{stop=true;el.classList.remove('demo');res()};
+        el.addEventListener('pointerdown',cancel,{once:true}); el.addEventListener('keydown',cancel,{once:true});
+        el.classList.add('demo');
+        (function step(now){
+          if(stop) return;
+          const k=Math.min(1,(now-t0)/dur), e=k<.5? (1-Math.cos(k*2*Math.PI))/2 : (1-Math.cos(k*2*Math.PI))/2;
+          const v=Math.round(from+(to-from)*e);
+          if(+el.value!==v){ el.value=v; el.dispatchEvent(new Event('input')); }
+          if(k<1) requestAnimationFrame(step); else { el.value=from; el.dispatchEvent(new Event('input')); el.classList.remove('demo'); el.removeEventListener('pointerdown',cancel); res(); }
+        })(t0);
+      });
+    }
+    const sets=[[ '#calc', [['#players',60],['#ggr',null]] ], [ '.ov-ctl', [['#hosts',12],['#hostggr',null]] ]];
+    sets.forEach(([box,list])=>{
+      const b=$(box); if(!b) return;
+      const io=new IntersectionObserver(async es=>{
+        if(!es.some(e=>e.isIntersecting)) return; io.disconnect();
+        await new Promise(r=>setTimeout(r,500));
+        for(const [sel,to] of list){ const el=$(sel); const target=to==null? Math.min(+el.max, +el.value+Math.round(+el.max*0.35)) : to; await demo(el,target,1600); await new Promise(r=>setTimeout(r,200)); }
+      },{threshold:.5,rootMargin:'0px 0px -20% 0px'});
+      io.observe($(list[0][0]).closest('.field')||b);
+    });
+  })();
+
+  /* invite + network animations: run while visible */
+  (function(){
+    const iv=$('#iv'), nw=$('#nw');
+    if(reduce){ iv.dataset.step='3'; nw.dataset.step='1'; return; }
+    let t=null, step=0;
+    const durs=[700,1900,2400,3200];
+    function tick(){ step=(step+1)%4; iv.dataset.step=String(step); t=setTimeout(tick,durs[step]); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(es=>es.forEach(e=>{
+        if(e.isIntersecting){ if(!t){ step=0; iv.dataset.step='0'; t=setTimeout(tick,500);} }
+        else { clearTimeout(t); t=null; iv.dataset.step='3'; }
+      }),{threshold:.35}).observe(iv);
+      let nwSeen=false; new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting&&!nwSeen){ nwSeen=true; nw.dataset.step='0'; requestAnimationFrame(()=>requestAnimationFrame(()=>nw.dataset.step='1')); } else if(!e.isIntersecting){ nwSeen=false; } }),{threshold:.3}).observe(nw);
+    } else { iv.dataset.step='3'; nw.dataset.step='1'; }
+  })();
+
+  /* video: play when visible */
+  const v=$('#c2'), vb=$('#vid-btn'); let userPaused=false;
+  vb.onclick=()=>{ if(v.paused){userPaused=false;v.play().catch(()=>{});vb.textContent='Pause'} else {userPaused=true;v.pause();vb.textContent='Play'} };
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting&&!userPaused){v.play().then(()=>vb.textContent='Pause').catch(()=>vb.textContent='Play')} else if(!e.isIntersecting){v.pause()} }),{threshold:.4}).observe(v);
+  }
+
+  /* loop ring ticker */
+  const steps=$$('.loop-step'); let li=0;
+  const arc=$('#loop-arc');
+  if(!reduce) setInterval(()=>{ steps[li].classList.remove('on'); li=(li+1)%4; steps[li].classList.add('on'); if(arc) arc.style.transform='rotate('+(li*90-90)+'deg)'; arc.style.transformOrigin='50px 50px'; arc.style.transition='transform .6s ease' },1600);
+
+  function intro(){ if(!hasGsap) return; gsap.from('.hero .hw',{y:36,opacity:0,duration:.9,stagger:.12,ease:'power3.out'}); }
+
+  if(!hasGsap){ document.getElementById('timeline').classList.add('no-pin'); const h=document.getElementById('tl-hint'); h.classList.add('side'); document.getElementById('tl-hint-t').textContent='I-swipe pakaliwa para makita ang iba'; document.getElementById('tl-track').addEventListener('scroll',()=>h.classList.add('gone'),{once:true}); if(ok) {} return; }
+  document.documentElement.classList.add('js');
+  gsap.registerPlugin(ScrollTrigger);
+  if(ok) intro();
+
+  /* progress */
+  gsap.to('#progress',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.2}});
+
+  /* reveals: start partly visible so nothing reads as empty */
+  $$('.rv').forEach(el=>{
+    gsap.from(el,{y:34,opacity:.15,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 90%',once:true}});
+  });
+
+  /* opportunity 'pero' lines */
+  $$('.opp .but').forEach(el=>gsap.from(el,{x:-14,opacity:.2,duration:.7,delay:.3,scrollTrigger:{trigger:el,start:'top 92%',once:true}}));
+
+  /* timeline: horizontal pin */
+  const track=$('#tl-track');
+  const dist=()=>Math.max(0,track.scrollWidth-window.innerWidth);
+  const hint=$('#tl-hint'), bar=$('#tl-bar');
+  if(!window.matchMedia('(pointer:coarse)').matches) $('#tl-hint-t').textContent='Mag-scroll pababa para tumuloy';
+  gsap.to(track,{x:()=>-dist(),ease:'none',scrollTrigger:{trigger:'.tl-pin',start:'top top',end:()=>'+='+dist(),pin:true,scrub:.6,invalidateOnRefresh:true,anticipatePin:1,
+    onUpdate:self=>{ bar.style.transform='scaleX('+self.progress.toFixed(3)+')'; hint.classList.toggle('gone',self.progress>0.12&&self.progress<0.98||self.progress>=0.98); }}});
+
+  /* market counter + bars */
+  const mk={v:0};
+  gsap.to(mk,{v:396,duration:1.6,ease:'power2.out',scrollTrigger:{trigger:'#mkt',start:'top 85%',once:true},onUpdate:()=>$('#mkt').textContent='₱'+Math.round(mk.v)+'B'});
+  gsap.from('#chart .bar i',{scaleY:.06,duration:1.1,stagger:.1,ease:'power3.out',scrollTrigger:{trigger:'#chart',start:'top 85%',once:true}});
+
+  /* formula build */
+  gsap.from('#formula .ft',{y:26,opacity:.1,scale:.92,duration:.6,stagger:.18,ease:'back.out(1.6)',scrollTrigger:{trigger:'#formula',start:'top 85%',once:true}});
+
+  /* ₱0.00 countdown */
+  const z={v:25000};
+  gsap.to(z,{v:0,duration:1.8,ease:'power3.inOut',scrollTrigger:{trigger:'#zero',start:'top 85%',once:true},onStart:()=>{},onUpdate:()=>$('#zero').textContent='₱'+z.v.toLocaleString('en-PH',{minimumFractionDigits:2,maximumFractionDigits:2})});
+
+  /* commission bars + total */
+  gsap.from('#pc .fill',{scaleX:0,transformOrigin:(i)=>'0% 50%',duration:.9,stagger:.2,ease:'power2.out',scrollTrigger:{trigger:'#pc',start:'top 80%',once:true}});
+  $$('#pc .fill.neg').forEach(f=>f.style.transformOrigin='100% 50%');
+  const c={v:0};
+  gsap.to(c,{v:2000,duration:1.4,delay:.6,ease:'power2.out',scrollTrigger:{trigger:'#pc',start:'top 80%',once:true},onUpdate:()=>$('#pc-out').textContent=peso(c.v)});
+
+  /* stairs rise */
+  gsap.from('#stairs .blk',{scaleY:.1,transformOrigin:'50% 100%',duration:.9,stagger:.12,ease:'power3.out',scrollTrigger:{trigger:'#stairs',start:'top 85%',once:true}});
+
+  window.addEventListener('load',()=>ScrollTrigger.refresh());
+})();
+</script>
+
+</body>
+</html>
