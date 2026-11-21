@@ -209,8 +209,11 @@ button{font:inherit;color:inherit}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;margin-top:18px}
 .tile{background:var(--ink-2);border-radius:20px;padding:22px 20px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden;text-align:left;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
 .tile:hover{transform:translateY(-3px);box-shadow:0 0 0 1px rgba(247,148,29,.5)}
-.tile .ic{height:84px;display:flex;align-items:center}
+.tile .ic{height:84px;display:flex;align-items:center;gap:6px}
 .tile .ic img{height:84px;width:auto}
+.tile[data-promo] .ic,.tile.club .ic{height:120px}
+.tile[data-promo] .ic img,.tile.club .ic img{height:120px;max-width:100%;object-fit:contain}
+.tile[data-promo="pa"] .ic img{height:110px}
 .tile h3{font-size:1.15rem}
 .tile p{color:var(--mute);font-size:var(--s-sm)}
 .tile .more{margin-top:auto;font-size:var(--s-xs);color:var(--orange);font-weight:600;padding-top:6px}
@@ -708,20 +711,20 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 
     <div class="group-label rv">Something extra when they deposit</div>
     <div class="tiles">
-      <button class="tile rv" type="button" data-promo="mano"><span class="ic"><img src="assets/chips.webp" alt=""></span><h3>Buena Mano Bonus</h3><p>+50% bonus chips at 100 Buenas Coins sa unang deposit.</p><span class="more">Learn more →</span></button>
-      <button class="tile rv" type="button" data-promo="pa"><span class="ic"><img src="assets/chips.webp" alt=""></span><h3>10% / 5% Pa-Buenas</h3><p>Extra bonus chips sa reload, plus Buenas Coins.</p><span class="more">Learn more →</span></button>
-      <button class="tile rv" type="button" data-promo="boost"><span class="ic"><img src="assets/coins.webp" alt=""></span><h3>Buenas Coin Boost</h3><p>1 Buenas Coin for every ₱100 deposited.</p><span class="more">Learn more →</span></button>
+      <button class="tile rv" type="button" data-promo="mano"><span class="ic"><img src="assets/promo-mano.webp" alt=""></span><h3>Buena Mano Bonus</h3><p>+50% bonus chips at 100 Buenas Coins sa unang deposit.</p><span class="more">Learn more →</span></button>
+      <button class="tile rv" type="button" data-promo="pa"><span class="ic"><img src="assets/promo-pa10.webp" alt=""><img src="assets/promo-pa5.webp" alt=""></span><h3>10% / 5% Pa-Buenas</h3><p>Extra bonus chips sa reload, plus Buenas Coins.</p><span class="more">Learn more →</span></button>
+      <button class="tile rv" type="button" data-promo="boost"><span class="ic"><img src="assets/promo-boost.webp" alt=""></span><h3>Buenas Coin Boost</h3><p>1 Buenas Coin for every ₱100 deposited.</p><span class="more">Learn more →</span></button>
     </div>
 
     <div class="group-label rv">Something extra while they play</div>
     <div class="tiles">
-      <button class="tile rv" type="button" data-promo="rush"><span class="ic"><img src="assets/coins.webp" alt=""></span><h3>Buenas Coin Rush</h3><p>1 Buenas Coin for every ₱10,000 bet. Walang limit.</p><span class="more">Learn more →</span></button>
+      <button class="tile rv" type="button" data-promo="rush"><span class="ic"><img src="assets/promo-rush.webp" alt=""></span><h3>Buenas Coin Rush</h3><p>1 Buenas Coin for every ₱10,000 bet. Walang limit.</p><span class="more">Learn more →</span></button>
     </div>
 
     <div class="group-label rv">Something back, every time</div>
     <div class="tiles">
       <div class="tile static club rv">
-        <div class="club-l"><span class="ic"><img src="assets/club.webp" alt=""></span><h3>Buenas Club</h3><p>Ang loyalty program ng Buenas. Automatic member ang bawat verified player. Habang naglalaro, tumataas ang rank nila, at lumalaki ang rewards.</p>
+        <div class="club-l"><span class="ic"><img src="assets/club-logo.webp" alt=""></span><h3>Buenas Club</h3><p>Ang loyalty program ng Buenas. Automatic member ang bawat verified player. Habang naglalaro, tumataas ang rank nila, at lumalaki ang rewards.</p>
           <div class="ranks num" aria-label="Weekly cashback per rank"><span><b>2%</b>Rank 1</span><span><b>3%</b>Rank 2</span><span><b>5%</b>Rank 3</span><span><b>7.5%</b>Rank 4</span><span><b>10%</b>Rank 5</span></div>
           <small class="note">Weekly cashback rate per rank</small>
         </div>
