@@ -454,6 +454,35 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .nw[data-step="1"] .nh .nh-pt{opacity:1}
 .nw-cap{margin-top:18px;color:var(--mute);font-size:var(--s-sm);text-align:center;max-width:60ch}
 @media (prefers-reduced-motion:reduce){.nh,.nh-pl img,.nh .nh-pt{opacity:1!important;transform:none!important}}
+/* christmas promo */
+.swap{display:inline-flex;align-items:baseline;gap:.22em;white-space:nowrap}
+.swap .old{position:relative;color:var(--mute);-webkit-text-fill-color:var(--mute);font-size:.62em;transition:opacity .4s .6s,font-size .4s .6s}
+.swap .old::after{content:"";position:absolute;left:-6%;right:-6%;top:52%;height:.14em;background:var(--red);border-radius:2px;transform:rotate(-8deg) scaleX(1);transform-origin:0 50%;transition:transform .45s cubic-bezier(.6,0,.3,1)}
+.swap .new{display:inline-block;transition:transform .6s cubic-bezier(.3,1.7,.5,1) .9s,opacity .3s .9s,max-width .5s .8s;max-width:3.2em}
+.swap.ready:not(.go) .old,.swap.ready:not(.go) .old::after,.swap.ready:not(.go) .new,.xmas.ready:not(.go){transition:none}
+.swap.ready:not(.go) .old{color:var(--paper);-webkit-text-fill-color:var(--paper);font-size:1em}
+.swap.ready:not(.go) .old::after{transform:rotate(-8deg) scaleX(0)}
+.swap.ready:not(.go) .new{opacity:0;transform:scale(.3) translateY(.2em);max-width:0}
+.xmas{position:relative;overflow:hidden;margin-top:22px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;max-width:640px;border-radius:20px;padding:16px 18px;background:linear-gradient(120deg,#5A1414,#2D232D 60%);box-shadow:inset 0 0 0 1px rgba(255,215,0,.45),0 18px 40px -20px rgba(255,42,0,.5);transition:opacity .5s 1.3s,transform .6s cubic-bezier(.3,1.4,.5,1) 1.3s}
+.xmas.ready:not(.go){opacity:0;transform:translateY(16px) scale(.96)}
+.xm-art{width:clamp(72px,18vw,96px);height:auto;position:relative;z-index:1;transform-origin:50% 90%}
+.xmas.go .xm-art{animation:xmWiggle 1.2s ease-in-out 1.8s 2}
+@keyframes xmWiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-7deg)}75%{transform:rotate(7deg)}}
+.xm-txt{display:flex;flex-direction:column;gap:4px;position:relative;z-index:1;min-width:0}
+.xm-tag{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;font-family:var(--f-display);font-weight:700;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:var(--gold);border-radius:99px;padding:4px 10px}
+.xm-txt b{font-family:var(--f-display);font-size:clamp(1.05rem,3.6vw,1.35rem);line-height:1.2}
+.xm-txt>span:last-child{color:var(--peach);font-size:var(--s-sm)}
+.xm-snow{position:absolute;inset:0;pointer-events:none}
+.xm-snow i{position:absolute;top:-8px;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.75);animation:xmSnow linear infinite}
+.xm-snow i:nth-child(1){left:6%;animation-duration:6s}.xm-snow i:nth-child(2){left:18%;animation-duration:8s;animation-delay:1s;width:3px;height:3px}
+.xm-snow i:nth-child(3){left:31%;animation-duration:7s;animation-delay:2.5s}.xm-snow i:nth-child(4){left:44%;animation-duration:9s;animation-delay:.5s;width:3px;height:3px}
+.xm-snow i:nth-child(5){left:57%;animation-duration:6.5s;animation-delay:3s}.xm-snow i:nth-child(6){left:66%;animation-duration:8.5s;animation-delay:1.5s;width:4px;height:4px}
+.xm-snow i:nth-child(7){left:75%;animation-duration:7.5s;animation-delay:.2s}.xm-snow i:nth-child(8){left:84%;animation-duration:9.5s;animation-delay:2s;width:3px;height:3px}
+.xm-snow i:nth-child(9){left:92%;animation-duration:6.8s;animation-delay:4s}.xm-snow i:nth-child(10){left:38%;animation-duration:10s;animation-delay:5s;width:4px;height:4px}
+@keyframes xmSnow{0%{transform:translateY(0);opacity:0}10%{opacity:1}100%{transform:translateY(160px);opacity:0}}
+.xr{display:inline-block;font-family:var(--f-display);font-weight:700;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:var(--gold);border-radius:99px;padding:2px 7px;vertical-align:middle;margin-left:4px}
+s.was{color:var(--mute);font-weight:500;font-size:.8em;margin-right:4px;text-decoration-color:var(--red);text-decoration-thickness:2px}
+@media (prefers-reduced-motion:reduce){.xm-snow{display:none}}
 /* close */
 .close-band{overflow:hidden}
 .close-band::before{content:"";position:absolute;inset:0;background:url(assets/pattern.webp) center/900px auto repeat;opacity:.035;pointer-events:none}
@@ -785,8 +814,27 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 <section class="band" style="padding-top:24px">
   <div class="wrap">
     <p class="eyebrow rv">Way to earn #1 · Player Commission</p>
-    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:20ch">Buenas earns from GGR. <span class="g">You earn 20% of it, every week.</span></h2>
-    <div class="wk rv"><span class="wk-pill">Weekly</span><span>Bawat linggo, kinukuha ang <b>total weekly GGR</b> ng lahat ng players mo, tapos 20% nito ang kita mo.</span></div>
+    <h2 class="rv" style="font-size:var(--s-2xl);margin-top:14px;max-width:20ch">Buenas earns from GGR. <span class="g">You earn</span> <span class="swap" id="swap"><span class="old">20%</span><span class="new g">25%</span></span> <span class="g">of it, every week.</span></h2>
+    <div class="xmas" id="xmas" role="note" aria-label="Christmas promo: Player Commission is 25% instead of 20%, limited time only">
+      <div class="xm-snow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <svg class="xm-art" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><linearGradient id="xmBox" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF3B30"/><stop offset="1" stop-color="#B6271C"/></linearGradient><linearGradient id="xmGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE45C"/><stop offset="1" stop-color="#F7941D"/></linearGradient></defs>
+        <rect x="22" y="52" width="76" height="56" rx="8" fill="url(#xmBox)"/>
+        <rect x="16" y="40" width="88" height="18" rx="6" fill="#E8302A"/>
+        <rect x="53" y="40" width="14" height="68" fill="url(#xmGold)"/>
+        <path d="M60 40c-6-14-24-18-26-8-2 9 14 9 26 8zM60 40c6-14 24-18 26-8 2 9-14 9-26 8z" fill="url(#xmGold)"/>
+        <circle cx="60" cy="38" r="5" fill="#FFD700"/>
+        <path d="M30 46c4-6 12-6 14 0-6 0-9 3-14 0z" fill="#1F9D55"/><path d="M44 46c-1-7 6-11 11-7-5 2-7 5-11 7z" fill="#178046"/>
+        <circle cx="42" cy="47" r="3" fill="#FF2A00"/><circle cx="46" cy="44" r="2.6" fill="#FF2A00"/>
+        <text x="60" y="88" text-anchor="middle" font-family="Poppins,sans-serif" font-weight="800" font-size="20" fill="#FFF6E6">+5%</text>
+      </svg>
+      <div class="xm-txt">
+        <span class="xm-tag"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Christmas Promo · Limited time only</span>
+        <b>Player Commission is now <span class="g">25%</span>.</b>
+        <span>Regular rate: 20%. Pamasko namin sa hosts ang dagdag na +5%, for a limited time only.</span>
+      </div>
+    </div>
+    <div class="wk rv"><span class="wk-pill">Weekly</span><span>Bawat linggo, kinukuha ang <b>total weekly GGR</b> ng lahat ng players mo, tapos 25% nito ang kita mo <span class="xr">Xmas promo</span>.</span></div>
     <p class="lede rv" style="margin-top:18px">Kasama ang lahat ng game types.</p>
     <div class="games rv"><span class="chip">Slots</span><span class="chip">Fishing</span><span class="chip">Arcade</span><span class="chip">Live casino</span><span class="chip">Table games</span><span class="chip">at iba pa</span></div>
     <div class="iv rv" id="iv" data-step="3">
@@ -799,7 +847,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
       <ol class="iv-steps">
         <li data-s="1"><span>1</span>May kakilala kang naglalaro na</li>
         <li data-s="2"><span>2</span>I-invite mo gamit ang link mo</li>
-        <li data-s="3"><span>3</span>Player mo na sila, at kasama na sa 20% mo</li>
+        <li data-s="3"><span>3</span>Player mo na sila, at kasama na sa 25% mo</li>
       </ol>
     </div>
     <div class="pc">
@@ -811,13 +859,13 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
         <div class="pl"><img class="av" src="assets/av-player.webp" alt=""><div class="pl-info"><div class="pl-name"><b>Player C</b><span>Bets ₱5,000 · Winnings ₱7,500</span></div><span class="track"><span class="fill neg" style="width:10%"></span></span><span class="pl-cap">Mas malaki ang winnings ni Player C ngayong linggo.</span></div><span class="amt neg">−₱2,500</span></div>
         <div class="pc-total">
           <div class="row"><span>Total weekly GGR</span><b>₱10,000</b></div>
-          <div class="row"><span>× Player commission</span><b>20%</b></div>
-          <div class="pc-host" style="margin-top:8px"><img class="av h" src="assets/av-host.webp" alt="You, the host"><div><span class="note">Kita mo ngayong linggo</span><div class="big g" id="pc-out">₱2,000</div></div></div>
+          <div class="row"><span>× Player commission <span class="xr">Xmas promo</span></span><b><s class="was">20%</s> 25%</b></div>
+          <div class="pc-host" style="margin-top:8px"><img class="av h" src="assets/av-host.webp" alt="You, the host"><div><span class="note">Kita mo ngayong linggo</span><div class="big g" id="pc-out">₱2,500</div></div></div>
         </div>
       </div>
       <div class="callouts">
-        <div class="callout rv"><b>Bakit "combined"?</b><span>Normal lang na may players na nakakakuha ng winnings at may hindi. Iba-iba 'yan bawat linggo. Kaya naka-base ang 20% mo sa combined GGR ng lahat ng players mo, hindi kada player.</span></div>
-        <div class="callout rv"><b>Walang limit sa players.</b><span>Pwede kang mag-invite ng kahit ilang players. The bigger your network, the bigger your 20%.</span></div>
+        <div class="callout rv"><b>Bakit "combined"?</b><span>Normal lang na may players na nakakakuha ng winnings at may hindi. Iba-iba 'yan bawat linggo. Kaya naka-base ang commission mo sa combined GGR ng lahat ng players mo, hindi kada player.</span></div>
+        <div class="callout rv"><b>Walang limit sa players.</b><span>Pwede kang mag-invite ng kahit ilang players. The bigger your network, the bigger your commission.</span></div>
         <div class="callout rv"><b>Except:</b><span>Under 21 years old, at government officials and employees. Hindi sila pwedeng maging player o host.</span></div>
       </div>
     </div>
@@ -828,7 +876,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 <section class="band" id="calc-sec" style="padding-top:0">
   <div class="wrap">
     <p class="eyebrow rv">Calculator</p>
-    <h2 class="rv" style="font-size:var(--s-xl);margin-top:14px;max-width:24ch">Tingnan natin kung magkano ang 20% mo.</h2>
+    <h2 class="rv" style="font-size:var(--s-xl);margin-top:14px;max-width:24ch">Tingnan natin kung magkano ang 25% mo.</h2>
     <p class="lede rv" style="margin-top:14px">I-adjust ang number of players at ang GGR para makita ang example.</p>
     <form class="calc rv" id="calc" onsubmit="return false">
       <div class="stack">
@@ -854,11 +902,11 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
         <div class="calc-steps num">
           <div class="cs-row"><span><b id="c-p">20 players</b> × <b id="c-g">₱1,000</b></span></div>
           <div class="cs-row tot"><span>Total weekly GGR</span><b id="r-tot">₱20,000</b></div>
-          <div class="cs-row"><span>× Player commission</span><b>20%</b></div>
+          <div class="cs-row"><span>× Player commission <span class="xr">Xmas promo</span></span><b><s class="was">20%</s> 25%</b></div>
         </div>
         <div class="result num">
-          <div><span>Kita mo kada linggo</span><b id="r-week">₱4,000</b></div>
-          <div class="m"><span>Kada buwan (× 4 weeks)</span><b id="r-month">₱16,000</b></div>
+          <div><span>Kita mo kada linggo</span><b id="r-week">₱5,000</b></div>
+          <div class="m"><span>Kada buwan (× 4 weeks)</span><b id="r-month">₱20,000</b></div>
         </div>
       </div>
       <div class="warn"><svg viewBox="0 0 24 24" fill="none" stroke="#FDD3A0" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg><span><b>Example lang 'to.</b> Sa industry na 'to, hindi natin alam kung ang host ay magkakaroon ng isang high-roller o ng malaking network ng small players. Kaya ang number of players at GGR dito ay for example purposes only. Ang actual na kita mo ay depende sa activity ng players mo.</span></div>
@@ -919,8 +967,8 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
     <div class="stack-grid">
       <div class="st-card rv">
         <span class="eyebrow">Way #1 · Player commission</span>
-        <p class="st-eq num" id="st-pc-eq">Total weekly GGR ₱20,000 (20 players × ₱1,000) × 20% × 4 weeks</p>
-        <div class="st-row num"><span>Per month</span><b id="st-pc-m">₱16,000</b></div>
+        <p class="st-eq num" id="st-pc-eq">Total weekly GGR ₱20,000 (20 players × ₱1,000) × 25% × 4 weeks</p>
+        <div class="st-row num"><span>Per month</span><b id="st-pc-m">₱20,000</b></div>
         <a class="st-link" href="#calc-sec">Baguhin ang players ↑</a>
       </div>
       <div class="st-plus" aria-hidden="true">+</div>
@@ -932,7 +980,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
       </div>
     </div>
     <div class="st-total rv num" aria-live="polite">
-      <div><span>Total potential income per month</span><b class="g" id="st-m">₱19,000</b></div>
+      <div><span>Total potential income per month</span><b class="g" id="st-m">₱23,000</b></div>
     </div>
     <p class="note rv" style="margin-top:14px">Player commission is paid weekly; host override is paid every end of the month. Examples only. Actual earnings depend on your players' and hosts' activity.</p>
   </div>
@@ -946,7 +994,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
     <div class="recap">
       <div class="rv"><b>Licensed at legit</b><span>PAGCOR-licensed platform, in the market since 2022.</span></div>
       <div class="rv"><b>Laging may balik</b><span>Promos, Buenas Coins at rewards na nagpapabalik sa players mo.</span></div>
-      <div class="rv"><b>20% + up to 5%</b><span>Player commission every week, host override every month. ₱0 puhunan.</span></div>
+      <div class="rv"><b>25% + up to 5%</b><span>Player commission every week (25% for the Christmas promo, regular 20%), host override every month. ₱0 puhunan.</span></div>
     </div>
     <div class="mindset">
       <p class="eyebrow rv">Ang role mo bilang host</p>
@@ -993,6 +1041,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 <script>
 (function(){
   const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+  const RATE=0.25; /* Christmas promo; regular Player Commission is 0.20 */
   const peso=n=>'₱'+Math.round(n).toLocaleString('en-PH');
   const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const hasGsap=!!(window.gsap&&window.ScrollTrigger)&&!reduce;
@@ -1040,7 +1089,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   const gidx=v=>{let i=0;GV.forEach((x,k)=>{if(Math.abs(x-v)<Math.abs(GV[i]-v))i=k});return i};
   gg.value=gidx(1000);
   function calc(){
-    const p=+pl.value, g=gval(), tot=p*g, w=tot*0.2;
+    const p=+pl.value, g=gval(), tot=p*g, w=tot*RATE;
     $('#o-players').textContent=p; $('#o-ggr').textContent=peso(g); gg.setAttribute('aria-valuetext',peso(g));
     $('#c-p').textContent=p+(p>1?' players':' player'); $('#c-g').textContent=peso(g); $('#r-tot').textContent=peso(tot);
     $('#r-week').textContent=peso(w); $('#r-month').textContent=peso(w*4);
@@ -1066,8 +1115,8 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
     $('#ov-tot-eq').textContent=n+' host'+(n>1?'s':'')+' × '+peso(avg); $('#ov-tot').textContent=peso(n*avg);
     $('#ov-eq').textContent=peso(n*avg)+' × '+r+'%';
     $('#ov-out').innerHTML=peso(ovm)+'<small>/month</small>';
-    const p=+pl.value, g=gval(), pcm=p*g*0.2*4;
-    $('#st-pc-eq').textContent='Total weekly GGR '+peso(p*g)+' ('+p+' player'+(p>1?'s':'')+' × '+peso(g)+') × 20% × 4 weeks';
+    const p=+pl.value, g=gval(), pcm=p*g*RATE*4;
+    $('#st-pc-eq').textContent='Total weekly GGR '+peso(p*g)+' ('+p+' player'+(p>1?'s':'')+' × '+peso(g)+') × '+Math.round(RATE*100)+'% × 4 weeks';
     $('#st-pc-m').textContent=peso(pcm);
     $('#st-ov-eq').textContent=tn+': total monthly GGR '+peso(n*avg)+' ('+n+' host'+(n>1?'s':'')+' × '+peso(avg)+') × '+r+'%';
     $('#st-ov-m').textContent=peso(ovm);
@@ -1105,6 +1154,16 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
       },{threshold:.5,rootMargin:'0px 0px -20% 0px'});
       io.observe($(list[0][0]).closest('.field')||b);
     });
+  })();
+
+  /* Christmas promo: 20% gets slashed, 25% pops in */
+  (function(){
+    const sw=$('#swap'), xm=$('#xmas'); if(!sw||!xm) return;
+    if(reduce || !('IntersectionObserver' in window)) return;
+    sw.classList.add('ready'); xm.classList.add('ready');
+    const io=new IntersectionObserver(es=>{ if(!es.some(e=>e.isIntersecting)) return; io.disconnect();
+      setTimeout(()=>{ sw.classList.add('go'); xm.classList.add('go'); },350); },{threshold:1,rootMargin:'0px 0px -15% 0px'});
+    io.observe(sw);
   })();
 
   /* invite + network animations: run while visible */
@@ -1177,7 +1236,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   gsap.from('#pc .fill',{scaleX:0,transformOrigin:(i)=>'0% 50%',duration:.9,stagger:.2,ease:'power2.out',scrollTrigger:{trigger:'#pc',start:'top 80%',once:true}});
   $$('#pc .fill.neg').forEach(f=>f.style.transformOrigin='100% 50%');
   const c={v:0};
-  gsap.to(c,{v:2000,duration:1.4,delay:.6,ease:'power2.out',scrollTrigger:{trigger:'#pc',start:'top 80%',once:true},onUpdate:()=>$('#pc-out').textContent=peso(c.v)});
+  gsap.to(c,{v:2500,duration:1.4,delay:.6,ease:'power2.out',scrollTrigger:{trigger:'#pc',start:'top 80%',once:true},onUpdate:()=>$('#pc-out').textContent=peso(c.v)});
 
   /* stairs rise */
   gsap.from('#stairs .blk',{scaleY:.1,transformOrigin:'50% 100%',duration:.9,stagger:.12,ease:'power3.out',scrollTrigger:{trigger:'#stairs',start:'top 85%',once:true}});
